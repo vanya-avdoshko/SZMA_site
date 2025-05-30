@@ -1,0 +1,22 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem 1rem;
+  
+  /* Можно добавить для визуализации */
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Дополнительно для дочерних элементов */
+.page-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.articles-section {
+  margin-top: 2rem;
+}

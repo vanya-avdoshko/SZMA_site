@@ -1,0 +1,141 @@
+/* src/styles/layout.css */
+
+/* Сброс стандартных отступов и box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Основные переменные для цветов и размеров */
+:root {
+  --header-height: 120px;
+  --sidebar-width: 250px;
+  --footer-height: 60px;
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --text-color: #333;
+  --light-bg: #f5f7fa;
+  --border-color: #ddd;
+}
+
+/* Основная сетка приложения */
+.app-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  grid-template-rows: var(--header-height) 1fr var(--footer-height);
+  grid-template-columns: var(--sidebar-width) 1fr;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+}
+
+/* Шапка сайта */
+header {
+  grid-area: header;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  /* Центрирование содержимого */
+  display: flex;
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center;     /* Вертикальное центрирование */
+  
+  padding: 0.5rem 1rem; /* Уменьшаем отступы */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.company-logo {
+  height: 100vh;
+  margin-right: 1.5rem;
+}
+
+.company-title {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.company-title h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+
+}
+
+.company-title h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  opacity: 0.9;
+}
+
+/* Боковая панель навигации */
+aside {
+  grid-area: sidebar;
+  background-color: var(--light-bg);
+  border-right: 1px solid var(--border-color);
+  padding: 1.5rem 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 0.2rem;
+}
+
+nav a {
+  display: block;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.2s;
+}
+
+nav a:hover {
+  background-color: #e9ecef;
+}
+
+nav a.active {
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: bold;
+}
+
+/* Основное содержимое */
+main {
+  grid-area: content;
+  padding: 2rem;
+  background-color: #fff;
+  overflow-y: auto;
+  
+  /* Новые свойства для центрирования */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+/* .page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+/* Подвал сайта */
+footer {
+  grid-area: footer;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  font-size: 0.9rem;
+}
+

@@ -3,17 +3,20 @@ import Header from '../HeaderComponent/Header';
 import Footer from '../FooterComponent/Footer';
 import Sidebar from '../SidebarComponent/Sidebar';
 import { Outlet } from 'react-router-dom';
+import './layout.css';
 
 const Layout = ({ children }) => {
     return (
-        <div>
+        <div className='app-container'>
             <Header/>
 
             <div>
                 <Sidebar/>
 
                 <main>
-                    <Outlet/>
+                    <div className='page-content'>
+                        <Outlet/>
+                    </div>
                 </main>
             </div>
 

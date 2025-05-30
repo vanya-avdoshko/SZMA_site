@@ -1,8 +1,10 @@
 import React from 'react'
+import './homepage.css'
 
 const HomePage = () => {
     return (
-        <section className="page-content">
+        <div className='homeContainer'>
+            <section>
             <h2 className="page-title">Добро пожаловать на наш сайт</h2>
             <p>Здесь будет основной контент главной страницы...</p>
             
@@ -14,6 +16,8 @@ const HomePage = () => {
                 </div>
             </div>
         </section>
+        </div>
+        
     );
 }
 
