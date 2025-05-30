@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../HeaderComponent/Header';
 import Footer from '../FooterComponent/Footer';
 import Sidebar from '../SidebarComponent/Sidebar';
+import { Outlet } from 'react-router-dom';
 
 const Layout = ({ children }) => {
     return (
@@ -12,7 +13,7 @@ const Layout = ({ children }) => {
                 <Sidebar/>
 
                 <main>
-                    {children} {}
+                    <Outlet/>
                 </main>
             </div>
 

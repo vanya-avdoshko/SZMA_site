@@ -4,9 +4,14 @@ import { NavLink } from 'react-router-dom';
 const Sidebar = () => {
     //пункты меню
     const navItems = [
-        {path: '/', label: 'Главная'},
-        {path: '/news', label: 'Новости'},
-        {path: '/products', label: 'Продукция'}
+        {id: 1, path: '/', label: 'Главная'},
+        {id: 2, path: '/news', label: 'Новости'},
+        {id: 3, path: '/products', label: 'Продукция'},
+        {id: 4, path: '/projects', label: 'Проекты'},
+        {id: 5, path: '/licenses', label: 'Лицензии'},
+        {id: 6, path: '/learning', label: 'Обучение'},
+        {id: 7, path: '/contacts', label: 'Контакты'},
+
     ];
 
     return (
@@ -14,7 +19,7 @@ const Sidebar = () => {
             <nav className='navigation'>
                 <ul>
                     {navItems.map((item) => (
-                        <li key={item.path}>
+                        <li key={item.id}>
                             <NavLink to={item.path}
                                 className={({isActive}) =>
                                     isActive ? 'nav-link active' : 'nav-link'
