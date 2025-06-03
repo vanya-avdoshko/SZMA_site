@@ -1,0 +1,116 @@
+/* Flex контейнер для новостей */
+.newsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Равномерное распределение */
+  gap: 50px; /* Расстояние между элементами */
+  margin-top: 30px;
+}
+
+/* Flex-элемент новости (занимает 30% ширины) */
+.newsItem {
+  flex: 0 0 calc(33.333% - 25px); /* 3 колонки с учетом gap */
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  min-width: 100px; /* Минимальная ширина элемента */
+}
+
+.newsImageContainer {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.newsImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.newsItem:hover .newsImage {
+  transform: scale(1.05);
+}
+
+.newsCategory {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #3498db;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.newsContent {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.newsDate {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+
+.newsTitle {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  line-height: 1.4;
+}
+
+.newsExcerpt {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.newsLink {
+  display: inline-flex;
+  align-items: center;
+  color: #3498db;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.newsLink:hover {
+  color: #2980b9;
+}
+
+.newsLink::after {
+  content: "→";
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.newsLink:hover::after {
+  transform: translateX(3px);
+}
+
+/* Добавьте в news_item.module.css */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.newsItemFlex {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.newsItemFlex:nth-child(1) { animation-delay: 0.1s; }
+.newsItemFlex:nth-child(2) { animation-delay: 0.2s; }
+.newsItemFlex:nth-child(3) { animation-delay: 0.3s; }
