@@ -8,7 +8,7 @@ import ProjectsPage from "./components/ui/ProjectsPageComponent/ProjectsPage"
 import LicensesPage from "./components/ui/LicensesPageComponent/LicensesPage"
 import LearningPage from "./components/ui/LearningPageComponent/LearningPage"
 import ContactsPage from "./components/ui/ContactsPageComponent/ContactsPage"
-
+import NewsDetail from "./components/ui/NewsItemComponent/NewsDetail"
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Route path='/' element={<Layout/>}>,
           <Route index element={<HomePage/>}/>,
           <Route path='/news' element={<NewsPage/>}/>,
+          <Route path='/news/:id' element={<NewsDetail/>}/>,
           <Route path='/products' element={<ProductsPage/>}/>,
           <Route path='/projects' element={<ProjectsPage/>}/>,
           <Route path='/licenses' element={<LicensesPage/>}/>,
