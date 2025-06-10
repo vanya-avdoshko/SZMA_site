@@ -1,5 +1,224 @@
+.important_positions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#general_manager,
+#chief_engineer,
+#foreman {
+  flex: 1 1 calc(33.333% - 20px); 
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 250px; /* Минимальная ширина для корректного отображения */
+}
+
+/* Эффект при наведении */
+#general_manager:hover,
+#chief_engineer:hover,
+#foreman:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Заголовок должности */
+#general_manager h3,
+#chief_engineer h3,
+#foreman h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Стили для фотографий */
+#general_manager img,
+#chief_engineer img,
+#foreman img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3498db;
+  margin-bottom: 15px;
+}
+
+/* Имя сотрудника */
+.contacts_name {
+  font-size: 1.25rem;
+  color: #34495e;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Номера телефонов */
+.phone_number {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Анимация появления карточек */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#general_manager,
+#chief_engineer,
+#foreman {
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+#general_manager { animation-delay: 0.1s; }
+#chief_engineer { animation-delay: 0.2s; }
+#foreman { animation-delay: 0.3s; }
+
+/* @media (max-width: 1024px) {
+  #general_manager,
+  #chief_engineer,
+  #foreman {
+    flex: 1 1 calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 768px) {
+  #general_manager,
+  #chief_engineer,
+  #foreman {
+    flex: 1 1 100%; 
+  }
+} */
+
+
+/* Контейнер для всей секции контактов */
+.contacts-content {
+  display: block;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Стили для карточек реквизитов, email и карты */
+.requisites,
 .mapContainer {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 250px; /* Минимальная ширина для корректного отображения */
+}
+
+/* Эффект при наведении */
+.requisites:hover,
+.mapContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Заголовок в карточке реквизитов */
+.requisites h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Текст в карточке реквизитов */
+.requisites p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0; 
+}
+
+/* Стили для карточки email */
+.mail p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Стили для ссылки email */
+.mail a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.mail a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Стили для карты */
+.mapContainer iframe {
   width: 100%;
   height: 250px;
-  position: relative;
+  border: none;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Анимация появления карточек */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.requisites,
+.mail,
+.mapContainer {
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+.requisites { animation-delay: 0.1s; }
+.mail { animation-delay: 0.2s; }
+.mapContainer { animation-delay: 0.3s; }
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .requisites,
+  .mail,
+  .mapContainer {
+    flex: 1 1 calc(50% - 20px); /* Две колонки */
+  }
+}
+
+@media (max-width: 768px) {
+  .requisites,
+  .mail,
+  .mapContainer {
+    flex: 1 1 100%; /* Одна колонка */
+  }
 }
