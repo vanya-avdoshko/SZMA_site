@@ -6,11 +6,15 @@ const Sidebar = () => {
     const navItems = [
         {id: 1, path: '/', label: 'Главная'},
         {id: 2, path: '/news', label: 'Новости'},
-        {id: 3, path: '/products', label: 'Продукция'},
+        // {id: 3, path: '/products', label: 'Продукция'},
         {id: 4, path: '/projects', label: 'Проекты'},
         {id: 5, path: '/licenses', label: 'Лицензии'},
         {id: 6, path: '/learning', label: 'Обучение'},
-        {id: 7, path: '/contacts', label: 'Контакты'},
+        {id: 7, path: '/customers', label: 'Заказчики'},
+        {id: 8, path: '/vacancies', label: 'Вакансии'},
+        {id: 9, path: '/services', label: 'Услуги'},
+        {id: 10, path: '/contacts', label: 'Контакты'},
+
 
     ];
 
