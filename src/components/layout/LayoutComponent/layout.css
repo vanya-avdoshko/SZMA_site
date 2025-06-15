@@ -30,53 +30,12 @@
   grid-template-columns: var(--sidebar-width) 1fr;
   min-height: 100vh;
   font-family: 'Arial', sans-serif;
-  color: var(--text-color);
-}
-
-/* Шапка сайта */
-header {
-  grid-area: header;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1rem 2rem;
-  /* Центрирование содержимого */
-  display: flex;
-  justify-content: center; /* Горизонтальное центрирование */
-  align-items: center;     /* Вертикальное центрирование */
-  
-  padding: 0.5rem 1rem; /* Уменьшаем отступы */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.company-logo {
-  height: 100vh;
-  margin-right: 1.5rem;
-}
-
-.company-title {
-  flex-grow: 1;
-  justify-content: center;
-}
-
-.company-title h1 {
-  font-size: 1.8rem;
-  margin-bottom: 0.3rem;
-
-}
-
-.company-title h2 {
-  font-size: 1.2rem;
-  font-weight: normal;
-  opacity: 0.9;
+  color: var (--text-color);
 }
 
 /* Боковая панель навигации */
 aside {
-  grid-area: sidebar;
+  grid-area: sidebar;  
   background-color: var(--light-bg);
   border-right: 1px solid var(--border-color);
   padding: 1.5rem 0;
@@ -114,18 +73,10 @@ main {
   padding: 2rem;
   background-color: #fff;
   overflow-y: auto;
-  
-  /* Новые свойства для центрирования */
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-
-
-/* .page-content {
-  max-width: 1200px;
-  margin: 0 auto;
-} */
 
 /* Подвал сайта */
 footer {
@@ -139,3 +90,7 @@ footer {
   font-size: 0.9rem;
 }
 
+.navigation {
+  position: sticky; 
+  top: var(--header-height);
+}
