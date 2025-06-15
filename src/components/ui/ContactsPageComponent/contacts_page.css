@@ -4,14 +4,14 @@
   justify-content: space-between;
   gap: 20px;
   padding: 20px;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 #general_manager,
 #chief_engineer,
 #foreman {
-  flex: 1 1 calc(33.333% - 20px); 
+  flex: 1 1 calc(25% - 15px); 
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -117,17 +117,17 @@
   margin: 0 auto;
 }
 
-/* Стили для карточек реквизитов, email и карты */
+
 .requisites,
 .mapContainer {
   background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
   padding: 20px;
   margin-top: 20px;
   text-align: center; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-width: 250px; /* Минимальная ширина для корректного отображения */
+  min-width: 250px; 
 }
 
 /* Эффект при наведении */
@@ -207,11 +207,11 @@
 .mapContainer { animation-delay: 0.3s; }
 
 /* Адаптивность */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .requisites,
   .mail,
   .mapContainer {
-    flex: 1 1 calc(50% - 20px); /* Две колонки */
+    flex: 1 1 calc(50% - 20px); 
   }
 }
 
@@ -219,6 +219,6 @@
   .requisites,
   .mail,
   .mapContainer {
-    flex: 1 1 100%; /* Одна колонка */
+    flex: 1 1 100%;
   }
-}
+} */

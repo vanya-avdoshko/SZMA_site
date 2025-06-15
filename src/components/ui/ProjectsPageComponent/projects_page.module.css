@@ -1,0 +1,97 @@
+.projects_content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.projects_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.projects_table thead {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.projects_table th {
+  padding: 1.2rem 1rem;
+  font-weight: 600;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.projects_table tbody tr {
+  transition: background-color 0.2s ease;
+  border-bottom: 1px solid #eee;
+}
+
+.projects_table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.projects_table tbody tr:hover {
+  background-color: #e9f7fe;
+}
+
+.projects_table td {
+  padding: 1rem;
+  vertical-align: top;
+  color: #333;
+}
+
+.project_name {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.project_details {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.project_details ul {
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.project_details li {
+  margin-bottom: 0.3rem;
+}
+
+.project_customer, 
+.project_contractor, 
+.project_year {
+  min-width: 150px;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+  .projects-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .projects_table th, 
+  .projects_table td {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects_table th {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+  
+  .projects_table td {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+}
