@@ -1,0 +1,140 @@
+/* СЛАЙДЕР */
+/* Общий стиль слайдера */
+.slider {
+    max-width: 1200px;
+    position: relative;
+    margin-top: -56px;
+    margin-bottom: 32px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background: #f4f4f4;
+    animation: fadeIn 1s ease-out;
+    box-sizing: border-box;
+}
+
+/* Плавный переход между слайдами */
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+/* Каждый слайд занимает 100% ширины контейнера */
+.slide {
+    min-width: 100%;
+    position: relative;
+}
+
+/* Стиль текста для нумерации слайдов */
+.numbertext {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 50%;
+    animation: slideIn 1s ease-in-out;
+}
+
+
+/* Стиль изображения с плавным масштабированием */
+.slide img {
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+}
+
+/* Навигационные стрелки */
+.slider_navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    z-index: 1;
+}
+
+/* Кнопки навигации */
+.prev,
+.next {
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    border-radius: 50%;
+    font-size: 48px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+/* Позиционирование кнопки "Next" */
+.next {
+    right: 10px;
+}
+
+/* Позиционирование кнопки "Prev" */
+.prev {
+    left: 0;
+}
+
+.prev:hover,
+.next:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Стиль точек пагинации */
+.pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
+    background: transparent;
+    /* Remove white background */
+}
+
+.page_dot {
+    cursor: pointer;
+    opacity: 0.5;
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Semi-transparent white for visibility */
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /* Shadow for contrast */
+}
+
+.page_dot:hover {
+    transform: scale(1.3);
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+}
+
+.active_dot {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.3);
+}
+
+/* Анимация появления текста и элементов */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
