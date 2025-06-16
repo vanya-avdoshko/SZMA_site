@@ -1,24 +1,25 @@
 .important_positions {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 15px;
   padding: 20px;
   max-width: 100%;
   margin: 0 auto;
+  overflow-x: auto;
 }
 
 #general_manager,
 #chief_engineer,
 #foreman {
-  flex: 1 1 calc(25% - 15px); 
+  flex: 0 0 300px; /* Fixed width for each card */
+  min-height: 400px; /* Fixed minimum height for consistency */
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-width: 250px; /* Минимальная ширина для корректного отображения */
 }
 
 /* Эффект при наведении */
@@ -90,23 +91,6 @@
 #chief_engineer { animation-delay: 0.2s; }
 #foreman { animation-delay: 0.3s; }
 
-/* @media (max-width: 1024px) {
-  #general_manager,
-  #chief_engineer,
-  #foreman {
-    flex: 1 1 calc(50% - 20px); 
-  }
-}
-
-@media (max-width: 768px) {
-  #general_manager,
-  #chief_engineer,
-  #foreman {
-    flex: 1 1 100%; 
-  }
-} */
-
-
 /* Контейнер для всей секции контактов */
 .contacts-content {
   display: block;
@@ -117,17 +101,14 @@
   margin: 0 auto;
 }
 
-
 .requisites,
 .mapContainer {
   background-color: #ffffff;
-  /* border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
   padding: 20px;
   margin-top: 20px;
-  text-align: center; 
+  text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-width: 250px; 
+  min-width: 250px;
 }
 
 /* Эффект при наведении */
@@ -150,7 +131,7 @@
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
-  margin: 0; 
+  margin: 0;
 }
 
 /* Стили для карточки email */
@@ -184,17 +165,6 @@
 }
 
 /* Анимация появления карточек */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .requisites,
 .mail,
 .mapContainer {
@@ -205,20 +175,3 @@
 .requisites { animation-delay: 0.1s; }
 .mail { animation-delay: 0.2s; }
 .mapContainer { animation-delay: 0.3s; }
-
-/* Адаптивность */
-/* @media (max-width: 1024px) {
-  .requisites,
-  .mail,
-  .mapContainer {
-    flex: 1 1 calc(50% - 20px); 
-  }
-}
-
-@media (max-width: 768px) {
-  .requisites,
-  .mail,
-  .mapContainer {
-    flex: 1 1 100%;
-  }
-} */
