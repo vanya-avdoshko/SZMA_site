@@ -1,0 +1,26 @@
+.customersPage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.customersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .customersContainer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .customersContainer {
+    gap: 15px;
+  }
+}

@@ -27,11 +27,11 @@ const LicensesPage = () => {
           <div className="license-details">
             <div className="detail-item">
               <span>Номер:</span>
-              <strong>Л-12345</strong>
+              <strong>33133/236-1</strong>
             </div>
             <div className="detail-item">
               <span>Дата выдачи:</span>
-              <strong>15 мая 2020 г.</strong>
+              <strong>12 февраля 2007 г.</strong>
             </div>
             <div className="detail-item">
               <span>Срок действия:</span>
