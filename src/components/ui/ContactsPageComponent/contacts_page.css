@@ -1,23 +1,23 @@
 .important_positions {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 15px;
   padding: 20px;
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  overflow-x: auto;
 }
 
 #general_manager,
 #chief_engineer,
-#foreman {
-  flex: 0 0 300px; /* Fixed width for each card */
-  min-height: 400px; /* Fixed minimum height for consistency */
+#foreman,
+#placeholder {
+  flex: 0 0 280px; /* Fixed width for each card to fit 4 in 1200px */
+  min-height: 360px; /* Reduced height for compact layout */
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 15px; /* Reduced padding */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -25,7 +25,8 @@
 /* Эффект при наведении */
 #general_manager:hover,
 #chief_engineer:hover,
-#foreman:hover {
+#foreman:hover,
+#placeholder:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
@@ -33,38 +34,40 @@
 /* Заголовок должности */
 #general_manager h3,
 #chief_engineer h3,
-#foreman h3 {
-  font-size: 1.5rem;
+#foreman h3,
+#placeholder h3 {
+  font-size: 1.2rem; /* Reduced font size */
   color: #2c3e50;
-  margin-bottom: 15px;
+  margin-bottom: 10px; /* Reduced margin */
   font-weight: 600;
 }
 
 /* Стили для фотографий */
 #general_manager img,
 #chief_engineer img,
-#foreman img {
-  width: 120px;
-  height: 120px;
+#foreman img,
+#placeholder img {
+  width: 80px; /* Reduced image size */
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #3498db;
-  margin-bottom: 15px;
+  border: 2px solid #3498db; /* Slightly thinner border */
+  margin-bottom: 10px; /* Reduced margin */
 }
 
 /* Имя сотрудника */
 .contacts_name {
-  font-size: 1.25rem;
+  font-size: 1rem; /* Reduced font size */
   color: #34495e;
-  margin-bottom: 10px;
+  margin-bottom: 8px; /* Reduced margin */
   font-weight: 500;
 }
 
 /* Номера телефонов */
 .phone_number {
-  font-size: 1rem;
+  font-size: 0.9rem; /* Reduced font size */
   color: #555;
-  line-height: 1.6;
+  line-height: 1.4; /* Adjusted line height */
   margin: 0;
 }
 
@@ -82,7 +85,8 @@
 
 #general_manager,
 #chief_engineer,
-#foreman {
+#foreman,
+#placeholder {
   animation: fadeInUp 0.5s ease forwards;
   opacity: 0;
 }
@@ -90,6 +94,7 @@
 #general_manager { animation-delay: 0.1s; }
 #chief_engineer { animation-delay: 0.2s; }
 #foreman { animation-delay: 0.3s; }
+#placeholder { animation-delay: 0.4s; }
 
 /* Контейнер для всей секции контактов */
 .contacts-content {
@@ -175,3 +180,29 @@
 .requisites { animation-delay: 0.1s; }
 .mail { animation-delay: 0.2s; }
 .mapContainer { animation-delay: 0.3s; }
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .important_positions {
+    flex-wrap: wrap;
+  }
+  #general_manager,
+  #chief_engineer,
+  #foreman,
+  #placeholder {
+    flex: 0 0 calc(50% - 7.5px); /* Two cards per row on smaller screens */
+    width: 280px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  #general_manager,
+  #chief_engineer,
+  #foreman,
+  #placeholder {
+    flex: 0 0 100%; /* Stack cards vertically on very small screens */
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+}

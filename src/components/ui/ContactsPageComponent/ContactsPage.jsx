@@ -26,7 +26,7 @@ const ContactsPage = () => {
                     <p className='phone_number'>+375 (236) 21-06-05 (г. Мозырь) <br/> +375 (29) 140-58-82 (Велком)<br/> +375 (33) 683-51-13 (МТС)</p>
                 </div>
                 <div id="chief_engineer">
-                    <h3>Главный<br/> инженер <br/><br/></h3>
+                    <h3>Главный инженер <br/><br/></h3>
                     <img src="/images/kirito.jpg" alt="главинженер"/>
                     <h4 className='contacts_name'>Галактионов Сергей Владимирович</h4>
                     <p className='phone_number'>+375 (17) 355-36-90<br/> +375 (17) 304-30-82 (г. Минск)<br/>+375 (29) 683-34-22 (Велком)<br/> +375 (33) 665-60-22 (МТС)</p>
