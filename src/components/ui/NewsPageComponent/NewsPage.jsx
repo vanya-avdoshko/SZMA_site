@@ -46,7 +46,7 @@ const NewsPage = () => {
               image={item.image}
               link={item.link}
             />
-          ))
+          ))  
         ) : (
           <p>Новостей пока нет</p>
         )}

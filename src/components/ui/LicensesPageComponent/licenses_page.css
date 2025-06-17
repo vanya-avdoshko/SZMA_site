@@ -29,6 +29,7 @@
 /* Основной блок лицензии */
 .main-license {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   gap: 2rem;
   background: white;
@@ -40,7 +41,7 @@
 
 .license-info {
   flex: 1;
-  min-width: 300px;
+  min-width: 400px;
 }
 
 .license-info h2 {
@@ -55,6 +56,7 @@
   color: #555;
   line-height: 1.7;
   margin-bottom: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .license-details {
@@ -101,6 +103,11 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   cursor: pointer;
+  aspect-ratio: 210 / 297; /* Пропорции A4 */
+  background-color: white; /* Фон для имитации бумаги */
+  max-width: 70%; /* Уменьшение размера блока на 30% */
+  justify-self: center; /* Выравнивание по центру в ячейке сетки */
+  margin-left: -20px;
 }
 
 .image-item:hover {
@@ -110,8 +117,8 @@
 
 .image-item img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain; 
   display: block;
 }
 
@@ -120,7 +127,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.2);  
   color: white;
   padding: 0.5rem;
   text-align: center;
@@ -237,10 +244,6 @@
 @media (max-width: 992px) {
   .image-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .image-item img {
-    height: 250px;
   }
 }
 

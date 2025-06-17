@@ -3,7 +3,8 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   gap: 15px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -12,14 +13,15 @@
 #chief_engineer,
 #foreman,
 #placeholder {
-  flex: 0 0 280px; /* Fixed width for each card to fit 4 in 1200px */
-  min-height: 360px; /* Reduced height for compact layout */
+  flex: 0 0 280px; 
+  /* min-height: 360px;  */
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 15px; /* Reduced padding */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;  
 }
 
 /* Эффект при наведении */
@@ -110,7 +112,7 @@
 .mapContainer {
   background-color: #ffffff;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: -20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   min-width: 250px;
