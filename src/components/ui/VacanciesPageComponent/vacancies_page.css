@@ -1,0 +1,86 @@
+.vacancies-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.vacancies-page h1 {
+    /* font-size: 28px; */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.vacancy {
+    width: 80%;
+    margin: 0 auto 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vacancy:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.vacancy-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.vacancy_image {
+    float: left;
+    margin-right: 20px;
+    margin-top: -10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* border: 2px solid #3498db; */
+    margin-right: 15px;
+}
+
+.vacancy h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    font-weight: 600;
+    margin: 0;
+}
+
+.vacancy .salary {
+    font-size: 1.2rem;
+    color: #555;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.vacancy .description {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 10px;
+    text-indent: 2rem;
+}
+
+.vacancy h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.vacancy .requirements {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.vacancy .requirements li {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 5px;
+}
