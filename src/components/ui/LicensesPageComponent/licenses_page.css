@@ -104,7 +104,7 @@
   transition: transform 0.3s ease;
   cursor: pointer;
   aspect-ratio: 210 / 297; /* Пропорции A4 */
-  background-color: white; /* Фон для имитации бумаги */
+  background-color: white;
   max-width: 70%; /* Уменьшение размера блока на 30% */
   justify-self: center; /* Выравнивание по центру в ячейке сетки */
   margin-left: -20px;
