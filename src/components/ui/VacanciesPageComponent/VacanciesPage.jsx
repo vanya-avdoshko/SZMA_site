@@ -50,7 +50,9 @@ const VacanciesPage = () => {
                     </div>
                 ))) :
             (
-                <div className='no_vacancies'>
+                <div className='no_vacancies' style={{ 
+        backgroundImage: `url(${process.env.PUBLIC_URL}/images/no_vacancies.jpg)` 
+      }}>
                     <p>Вакансий пока нет</p>
                 </div>
             )}
