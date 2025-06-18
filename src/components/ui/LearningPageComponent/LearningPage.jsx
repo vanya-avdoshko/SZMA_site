@@ -31,6 +31,21 @@ const LearningPage = () => {
     // Сортировка блоков по дате
     const sortedBlocks = [...blocks].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
+    function formatDate(dateString) {
+        const date = new Date(dateString);
+        const options = {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric',
+        };
+        return date.toLocaleDateString('ru-RU', options);
+    }
+
+    // Пример использования:
+    const dateString = "2024-06-18";
+    const formattedDate = formatDate(dateString);
+    console.log(formattedDate); // Вывод: 18 июня 2024
+
     // Функция для стилизации заголовка
     const renderStyledTitle = (title) => {
         const [firstWord, ...restWords] = title.split(' ');
@@ -70,7 +85,7 @@ const LearningPage = () => {
                         <div className="learning-details">
                             <div className="detail-item">
                                 <span>Дата получения</span>
-                                <strong>{block.date}</strong>
+                                <strong>{formatDate(block.date)}</strong>
                             </div>
                         </div>
                     </div>
