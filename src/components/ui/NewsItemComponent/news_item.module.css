@@ -100,7 +100,7 @@
   transform: translateX(3px);
 }
 
-/* Добавьте в news_item.module.css */
+/* Анимация для появления элементов */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -114,3 +114,87 @@
 .newsItemFlex:nth-child(1) { animation-delay: 0.1s; }
 .newsItemFlex:nth-child(2) { animation-delay: 0.2s; }
 .newsItemFlex:nth-child(3) { animation-delay: 0.3s; }
+
+/* Стили для страницы детальной новости */
+.newsDetail {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.newsDetail h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3498db;
+  text-align: center;
+}
+
+.newsDetail .newsImage {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+.newsDetail .newsDate {
+  color: #6c757d;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.newsDetail .newsContent {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.7;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .newsDetail {
+    padding: 1.5rem;
+  }
+
+  .newsDetail h1 {
+    font-size: 2rem;
+  }
+
+  .newsDetail .newsImage {
+    max-width: 100%;
+  }
+
+  .newsDetail .newsContent {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .newsDetail {
+    padding: 1rem;
+  }
+
+  .newsDetail h1 {
+    font-size: 1.8rem;
+  }
+
+  .newsDetail .newsDate {
+    font-size: 0.9rem;
+  }
+
+  .newsDetail .newsContent {
+    font-size: 1rem;
+  }
+}

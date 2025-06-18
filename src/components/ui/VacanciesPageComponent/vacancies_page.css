@@ -92,6 +92,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 1s ease-out;
     position: relative;
 }
 
@@ -103,4 +104,16 @@
     /* background-color: rgba(0, 0, 0, 0.5); */
     padding: 10px 20px;
     border-radius: 8px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
