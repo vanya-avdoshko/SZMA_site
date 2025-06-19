@@ -1,7 +1,10 @@
 .customersPage {
+   display: block;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 2rem 0;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 .customersContainer {

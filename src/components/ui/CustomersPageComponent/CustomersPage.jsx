@@ -58,7 +58,10 @@ const CustomersPage = () => {
 
   return (
     <div className={styles.customersPage}>
-      <h1>Наши заказчики</h1>
+      <div className="license-header">
+        <h1 className="animate-header">Заказчики</h1>
+        <p className="animate-subheader">Наши клиенты — лидеры индустрии</p>
+      </div>
       <div className={styles.customersContainer}>
         {customerData && customerData.length > 0 ? (
           customerData.map(item => (

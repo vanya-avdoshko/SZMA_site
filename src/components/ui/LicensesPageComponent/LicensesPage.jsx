@@ -13,17 +13,17 @@ const LicensesPage = () => {
   return (
     <div className="licenses-container">
       <div className="license-header">
-        <h1>Лицензии и сертификаты</h1>
-        <p>Какой-нибудь подзаголовок</p>
+        <h1 className="animate-header">Лицензии и сертификаты</h1>
+        <p className="animate-subheader">Документы, обеспечивающие безопасность и качество</p>
       </div>
 
       {/* Основной блок лицензии */}
       <div className="main-license">
         <div className="license-info">
           <h2>Проматомнадзор МЧС Республики Беларусь</h2>
-          <p>Специальное разрешение (лицензия) № 33133/ 236-1 на право осуществления деятельности в области 
+          <p>Специальное разрешение (лицензия) № 33133/ 236-1 на право осуществления деятельности в области
             промышленной безопасности. Лицензия выдана на основании решения от 12 февраля 2007 года №8 и зарегистрирована
-             в реестре специальных разрешений (лицензий) Госпромнадзора МЧС Республики Беларусь за № 236-1.</p>
+            в реестре специальных разрешений (лицензий) Госпромнадзора МЧС Республики Беларусь за № 236-1.</p>
           <div className="license-details">
             <div className="detail-item">
               <span>Номер:</span>
@@ -39,32 +39,32 @@ const LicensesPage = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="license-images">
           <div className="image-grid">
             <a href='/images/license_1.jpg' target='_blank'>
-                <div className="image-item">
-                    <img src='/images/license_1.jpg' alt="Лицензия - страница 1" />
+              <div className="image-item">
+                <img src='/images/license_1.jpg' alt="Лицензия - страница 1" />
                 <div className="image-caption">Страница 1</div>
-                </div>
+              </div>
             </a>
             <a href='/images/license_2.jpg' target='_blank'>
-                <div className="image-item">
-                    <img src='/images/license_2.jpg' alt="Лицензия - страница 2" />
+              <div className="image-item">
+                <img src='/images/license_2.jpg' alt="Лицензия - страница 2" />
                 <div className="image-caption">Страница 2</div>
-                </div>
+              </div>
             </a>
             <a href='/images/license_3.jpg' target='_blank'>
-                <div className="image-item">
-                    <img src='/images/license_3.jpg' alt="Лицензия - страница 3" />
+              <div className="image-item">
+                <img src='/images/license_3.jpg' alt="Лицензия - страница 3" />
                 <div className="image-caption">Страница 3</div>
-                </div>
+              </div>
             </a>
             <a href='/images/license_4.jpg' target='_blank'>
-                <div className="image-item">
-                    <img src='/images/license_4.jpg' alt="Лицензия - страница 4" />
+              <div className="image-item">
+                <img src='/images/license_4.jpg' alt="Лицензия - страница 4" />
                 <div className="image-caption">Страница 4</div>
-                </div>
+              </div>
             </a>
           </div>
           <div className="license-note">
@@ -76,7 +76,7 @@ const LicensesPage = () => {
       {/* Дополнительные документы */}
       <div className="additional-documents">
         <h2>Сопутствующие документы</h2>
-        
+
         <div className="documents-grid">
           <div className="document-card">
             {/* <div className="document-icon">
@@ -93,9 +93,9 @@ const LicensesPage = () => {
                   <span>Страниц:</span> 2
                 </div>
               </div>
-              <a 
-                href="/sertificate_BELGIM_new.pdf" 
-                target="_blank" 
+              <a
+                href="/sertificate_BELGIM_new.pdf"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="document-button"
               >
@@ -103,7 +103,7 @@ const LicensesPage = () => {
               </a>
             </div>
           </div>
-          
+
           <div className="document-card">
             {/* <div className="document-icon">
               <img src={ReviewIcon} alt="Отзывы" />
@@ -119,9 +119,9 @@ const LicensesPage = () => {
                   <span>Страниц:</span> 4
                 </div>
               </div>
-              <a 
-                href="/business_reviews.pdf" 
-                target="_blank" 
+              <a
+                href="/business_reviews.pdf"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="document-button"
               >

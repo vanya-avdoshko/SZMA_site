@@ -4,6 +4,10 @@ import styles from './projects_page.module.css';
 const ProjectsPage = () => {
   return (
     <div className={styles.projects_content}>
+      <div className="license-header">
+        <h1 className="animate-header">Проекты компании</h1>
+        <p className="animate-subheader">Эксперты в автоматизации: наши проекты</p>
+      </div>
       <table className={styles.projects_table}>
         <thead>
           <tr>

@@ -33,11 +33,14 @@ const VacanciesPage = () => {
 
     return (
         <div className='vacancies-page'>
-            <h1>Текущие вакансии</h1>
+            <div className="license-header">
+                <h1 className="animate-header">Действующие вакансии</h1>
+                <p className="animate-subheader">Откройте для себя карьеру в инженерии и автоматизации</p>
+            </div>
             {vacancies && vacancies.length > 0 ? (
                 vacancies.map((vacancy, index) => (
                     <div key={index} className='vacancy'>
-                        <img className='vacancy_image' src={vacancy.image} alt='Вакансия'/>
+                        <img className='vacancy_image' src={vacancy.image} alt='Вакансия' />
                         <h2>{vacancy.title}</h2>
                         <p className='salary'>{vacancy.salary}</p>
                         <p className='description'>{vacancy.description}</p>
@@ -49,13 +52,13 @@ const VacanciesPage = () => {
                         </ul>
                     </div>
                 ))) :
-            (
-                <div className='no_vacancies' style={{ 
-        backgroundImage: `url(${process.env.PUBLIC_URL}/images/no_vacancies.jpg)` 
-      }}>
-                    <p>Вакансий пока нет</p>
-                </div>
-            )}
+                (
+                    <div className='no_vacancies' style={{
+                        backgroundImage: `url(${process.env.PUBLIC_URL}/images/no_vacancies.jpg)`
+                    }}>
+                        <p>Вакансий пока нет</p>
+                    </div>
+                )}
         </div>
     );
 };

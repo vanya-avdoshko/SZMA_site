@@ -4,7 +4,10 @@ import './services_page.css'
 const ServicesPage = () => {
   return (
     <div className='services_block'>
-      <h1>Услуги</h1>
+      <div className="license-header">
+        <h1 className="animate-header">Услуги компании</h1>
+        <p className="animate-subheader">Автоматизация для безопасности: наши услуги</p>
+      </div>
       <div className='services_content'>
         <p>Перечень работ и услуг, составляющих вид деятельности:</p>
         <ul>

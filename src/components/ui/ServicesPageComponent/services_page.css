@@ -1,17 +1,17 @@
 .services_block {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     font-family: 'Arial', sans-serif;
     color: #333;
 }
 
-.services_block h1 {
+/* .services_block h1 {
     text-align: center;
     font-size: 2.5rem;
     color: #2c3e50;
     margin-bottom: 3rem;
-}
+} */
 
 .services_content {
     width: 80%;

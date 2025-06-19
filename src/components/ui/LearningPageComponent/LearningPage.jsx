@@ -62,7 +62,10 @@ const LearningPage = () => {
 
     return (
         <div className="learning-page">
-            <h1>Сертификаты обучения сотрудников</h1>
+            <div className="license-header">
+                <h1 className="animate-header">Сертификаты об обучении сотрудников</h1>
+                <p className="animate-subheader">Профессионалы, прошедшие специализированное обучение</p>
+            </div>
             <div className="learning-container">
                 {sortedBlocks.map((block, index) => (
                     <div key={index} className="learning-block">

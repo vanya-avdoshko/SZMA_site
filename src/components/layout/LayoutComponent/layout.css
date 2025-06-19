@@ -9,7 +9,7 @@
 
 /* Основные переменные для цветов и размеров */
 :root {
-  --header-height: 120px;
+  --header-height: 80px;
   --sidebar-width: 250px;
   --footer-height: 60px;
   --primary-color: #2c3e50;
@@ -17,6 +17,7 @@
   --text-color: #333;
   --light-bg: #f5f7fa;
   --border-color: #ddd;
+  --background-color: rgb(37, 46, 49);
 }
 
 /* Основная сетка приложения */
@@ -70,7 +71,7 @@ nav a.active {
 /* Основное содержимое */
 main {
   grid-area: content;
-  padding: 2rem;
+  padding: 2rem 0;
   background-color: #fff;
   overflow-y: auto;
   display: flex;

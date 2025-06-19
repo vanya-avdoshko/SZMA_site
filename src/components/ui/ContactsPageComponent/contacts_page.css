@@ -1,3 +1,13 @@
+/* Контейнер для всей секции контактов */
+.contacts-content {
+  display: block;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .important_positions {
   display: flex;
   flex-wrap: nowrap;
@@ -97,16 +107,6 @@
 #chief_engineer { animation-delay: 0.2s; }
 #foreman { animation-delay: 0.3s; }
 #placeholder { animation-delay: 0.4s; }
-
-/* Контейнер для всей секции контактов */
-.contacts-content {
-  display: block;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 .requisites,
 .mapContainer {

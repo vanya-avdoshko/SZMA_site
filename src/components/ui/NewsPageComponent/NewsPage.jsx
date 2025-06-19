@@ -33,7 +33,10 @@ const NewsPage = () => {
 
   return (
     <div className={styles.newsPage}>
-      <h1>Последние новости</h1>
+      <div className="license-header">
+        <h1>Новости компании</h1>
+        <p>Актуальная информация о нашей работе</p>
+      </div>
       
       <div className={styles.newsContainer}>
         {newsData && newsData.length > 0 ? (
