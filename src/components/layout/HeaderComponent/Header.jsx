@@ -1,7 +1,16 @@
-import React from 'react';
+// import React, { useState } from 'react';
 import styles from './header.module.css';
 
 const Header = () => {
+  // const [searchQuery, setSearchQuery] = useState('');
+
+  // const handleSearch = (query) => {
+  //   setSearchQuery(query);
+  //   // Базовая логика поиска: вывод запроса в консоль
+  //   console.log('Поиск по запросу:', query);
+  //   // Здесь можно добавить фильтрацию контента или переход на страницу результатов
+  // };
+
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
@@ -10,10 +19,26 @@ const Header = () => {
       <div className={styles.titleContainer}>
         <h1 className={styles.companyName}>СООО «БИК СЗМА»</h1>
       </div>
+      {/* <div className={styles.searchContainer}>
+        <input
+          type="text"
+          placeholder="Поиск по сайту..."
+          className={styles.searchInput}
+          value={searchQuery}
+          onChange={(e) => handleSearch(e.target.value)}
+          aria-label="Поиск по сайту"
+        />
+        <button className={styles.searchButton}><i className={`${styles.contactIcon} ${styles.searchIcon}`}></i></button>
+      </div> */}
+
+      <div className={styles.englishPage}>
+
+      </div>
+
       <div className={styles.contactInfo}>
         <div className={styles.contactItem}>
           <i className={`${styles.contactIcon} ${styles.locationIcon}`}></i>
-          <span className={styles.contactText}>Минск, Беларусь</span>
+          <span className={styles.contactText}>г. Минск, ул. Буйницкого, 21</span>
         </div>
         <div className={styles.contactItem}>
           <i className={`${styles.contactIcon} ${styles.phoneIcon}`}></i>
