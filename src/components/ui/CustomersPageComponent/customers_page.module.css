@@ -1,5 +1,5 @@
 .customersPage {
-   display: block;
+  display: block;
   justify-content: space-between;
   gap: 20px;
   padding: 2rem 0;
@@ -13,6 +13,11 @@
   justify-content: space-between;
   gap: 25px;
   margin-top: 30px;
+}
+
+.otherCustomersLink {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 /* Responsive adjustments */

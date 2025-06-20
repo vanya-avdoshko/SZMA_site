@@ -12,6 +12,7 @@ import NewsDetail from "./components/ui/NewsItemComponent/NewsDetail";
 import VacanciesPage from "./components/ui/VacanciesPageComponent/VacanciesPage";
 import ServicesPage from "./components/ui/ServicesPageComponent/ServicesPage";
 import CustomersPage from "./components/ui/CustomersPageComponent/CustomersPage";
+import OtherCustomersPage from "./components/ui/OtherCustomersPageComponent/OtherCustomersPage";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path='/vacancies' element={<VacanciesPage/>}/>,
           <Route path="/services" element={<ServicesPage/>}/>,
           <Route path="/customers" element={<CustomersPage/>}/>,
+          <Route path="/other-customers" element={<OtherCustomersPage/>}/>,
 
           {/* Роут для 404 страницы */}
           <Route path="*" element={<div>Страница не найдена</div>} />

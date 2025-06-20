@@ -1,6 +1,8 @@
 import React from 'react';
 import CustomerItem from '../CustomerItemComponent/CustomerItem';
 import styles from './customers_page.module.css';
+import { Link } from 'react-router-dom';
+
 
 const CustomersPage = () => {
   const customerData = [
@@ -77,6 +79,11 @@ const CustomersPage = () => {
         ) : (
           <p>Список заказчиков пуст</p>
         )}
+      </div>
+      <div className={styles.otherCustomersLink}>
+        <Link to="/other-customers" className="text-blue-600 hover:underline text-lg">
+          Посмотреть других заказчиков
+        </Link>
       </div>
     </div>
   );

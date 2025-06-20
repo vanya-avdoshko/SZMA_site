@@ -1,0 +1,68 @@
+.otherCustomersPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #fff;
+    max-width: 1200px; /* Ограничение ширины */
+    margin: 0 auto;    /* Центрирование */
+}
+
+.otherCustomersList {
+  margin-top: 30px;
+}
+
+.customerList {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+
+.customerItem {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  /* width: 100%; */
+  align-items: center;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.customerName {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.customerLocation {
+  font-size: 1rem;
+  color: #666;
+}
+
+.backLink {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .customerItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .customerName,
+  .customerLocation {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .otherCustomersPage {
+    padding: 1.5rem 1rem;
+  }
+}
