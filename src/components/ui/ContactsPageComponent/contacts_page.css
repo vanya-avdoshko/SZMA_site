@@ -23,15 +23,14 @@
 #chief_engineer,
 #foreman,
 #accountant {
-  flex: 0 0 280px; 
-  /* min-height: 360px;  */
+  flex: 0 0 280px;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 15px; /* Reduced padding */
+  padding: 15px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
 }
 
 /* Эффект при наведении */
@@ -48,9 +47,9 @@
 #chief_engineer h3,
 #foreman h3,
 #accountant h3 {
-  font-size: 1.2rem; /* Reduced font size */
+  font-size: 1.2rem;
   color: #2c3e50;
-  margin-bottom: 10px; /* Reduced margin */
+  margin-bottom: 10px;
   font-weight: 600;
 }
 
@@ -59,27 +58,27 @@
 #chief_engineer img,
 #foreman img,
 #accountant img {
-  width: 80px; /* Reduced image size */
+  width: 80px;
   height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #3498db; /* Slightly thinner border */
-  margin-bottom: 10px; /* Reduced margin */
+  border: 2px solid #3498db;
+  margin-bottom: 10px;
 }
 
 /* Имя сотрудника */
 .contacts_name {
-  font-size: 1rem; /* Reduced font size */
+  font-size: 1rem;
   color: #34495e;
-  margin-bottom: 8px; /* Reduced margin */
+  margin-bottom: 8px;
   font-weight: 500;
 }
 
 /* Номера телефонов */
 .phone_number {
-  font-size: 0.9rem; /* Reduced font size */
+  font-size: 0.9rem;
   color: #555;
-  line-height: 1.4; /* Adjusted line height */
+  line-height: 1.4;
   margin: 0;
 }
 
@@ -183,28 +182,207 @@
 .mail { animation-delay: 0.2s; }
 .mapContainer { animation-delay: 0.3s; }
 
-/* Адаптивность */
-@media (max-width: 768px) {
-  .important_positions {
-    flex-wrap: wrap;
+/* Медиа-запросы для больших экранов (>1200px) */
+@media (min-width: 1201px) {
+  .contacts-content {
+    padding: 2rem 1rem;
   }
+
+  .important_positions {
+    gap: 15px;
+  }
+
   #general_manager,
   #chief_engineer,
   #foreman,
   #accountant {
-    flex: 0 0 calc(50% - 7.5px); /* Two cards per row on smaller screens */
-    width: 280px;
-    margin-bottom: 15px;
+    flex: 0 0 280px;
+    padding: 15px;
+  }
+
+  .requisites,
+  .mapContainer {
+    padding: 25px;
+    margin-top: -15px;
+  }
+
+  .requisites h3 {
+    font-size: 1.6rem;
+  }
+
+  .requisites p,
+  .mail p {
+    font-size: 1.1rem;
   }
 }
 
-@media (max-width: 500px) {
+/* Медиа-запросы для планшетов (641px–1024px) */
+@media (max-width: 1024px) {
+  .contacts-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .important_positions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
   #general_manager,
   #chief_engineer,
   #foreman,
   #accountant {
-    flex: 0 0 100%; /* Stack cards vertically on very small screens */
-    width: 280px;
-    margin: 0 auto 15px;
+    flex: 0 0 calc(50% - 5px);
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    margin: 0 auto 10px;
+  }
+
+  .requisites,
+  .mapContainer {
+    padding: 15px;
+    margin-top: -10px;
+  }
+
+  .requisites h3 {
+    font-size: 1.4rem;
+  }
+
+  .requisites p,
+  .mail p {
+    font-size: 0.95rem;
+  }
+
+  .mapContainer iframe {
+    height: 200px;
+  }
+}
+
+/* Медиа-запросы для больших телефонов (481px–640px) */
+@media (max-width: 640px) {
+  .contacts-content {
+    padding: 1rem 0.75rem;
+  }
+
+  .important_positions {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #general_manager,
+  #chief_engineer,
+  #foreman,
+  #accountant {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 280px;
+    padding: 12px;
+    margin: 0 auto 10px;
+  }
+
+  #general_manager h3,
+  #chief_engineer h3,
+  #foreman h3,
+  #accountant h3 {
+    font-size: 1.1rem;
+  }
+
+  .contacts_name {
+    font-size: 0.95rem;
+  }
+
+  .phone_number {
+    font-size: 0.85rem;
+  }
+
+  #general_manager img,
+  #chief_engineer img,
+  #foreman img,
+  #accountant img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .requisites,
+  .mapContainer {
+    padding: 12px;
+    margin-top: 0;
+    min-width: 100%;
+  }
+
+  .requisites h3 {
+    font-size: 1.3rem;
+  }
+
+  .requisites p,
+  .mail p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .mapContainer iframe {
+    height: 180px;
+  }
+}
+
+/* Медиа-запросы для маленьких телефонов (≤480px) */
+@media (max-width: 480px) {
+  .contacts-content {
+    padding: 1rem 0.5rem;
+  }
+
+  .important_positions {
+    gap: 8px;
+  }
+
+  #general_manager,
+  #chief_engineer,
+  #foreman,
+  #accountant {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  #general_manager h3,
+  #chief_engineer h3,
+  #foreman h3,
+  #accountant h3 {
+    font-size: 1rem;
+  }
+
+  .contacts_name {
+    font-size: 0.9rem;
+  }
+
+  .phone_number {
+    font-size: 0.8rem;
+  }
+
+  #general_manager img,
+  #chief_engineer img,
+  #foreman img,
+  #accountant img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .requisites,
+  .mapContainer {
+    padding: 10px;
+  }
+
+  .requisites h3 {
+    font-size: 1.2rem;
+  }
+
+  .requisites p,
+  .mail p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .mapContainer iframe {
+    height: 150px;
   }
 }

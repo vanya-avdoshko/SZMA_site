@@ -31,12 +31,12 @@
   grid-template-columns: var(--sidebar-width) 1fr;
   min-height: 100vh;
   font-family: 'Arial', sans-serif;
-  color: var (--text-color);
+  color: var(--text-color);
 }
 
 /* Боковая панель навигации */
 aside {
-  grid-area: sidebar;  
+  grid-area: sidebar;
   background-color: var(--light-bg);
   border-right: 1px solid var(--border-color);
   padding: 1.5rem 0;
@@ -92,6 +92,81 @@ footer {
 }
 
 .navigation {
-  position: sticky; 
+  position: sticky;
   top: var(--header-height);
+}
+
+/* Медиа-запросы для планшетов (до 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --sidebar-width: 200px;
+  }
+
+  .app-container {
+    grid-template-columns: var(--sidebar-width) 1fr;
+  }
+
+  nav a {
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  footer {
+    padding: 0 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Медиа-запросы для телефонов (до 640px) */
+@media (max-width: 640px) {
+  :root {
+    --sidebar-width: 100%;
+    --header-height: auto;
+  }
+
+  .app-container {
+    grid-template-areas:
+      "header"
+      "content"
+      "sidebar"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto auto;
+  }
+
+  aside {
+    padding: 1rem 0;
+    border-right: none;
+    border-top: 1px solid var(--border-color);
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  nav li {
+    margin-bottom: 0;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 1rem 0.5rem;
+  }
+
+  footer {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .navigation {
+    position: static;
+  }
 }
