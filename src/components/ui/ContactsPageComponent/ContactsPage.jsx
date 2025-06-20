@@ -25,27 +25,27 @@ const ContactsPage = () => {
             <div className='important_positions'>
                 <div id="general_manager">
                     <h3>Генеральный директор <br /><br /></h3>
-                    <img src="/images/kirito.jpg" alt="гендиректор" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTawdOGxXg6ISHPiCRBEhXiuokkRRucHPmDg&s" alt="гендиректор" />
                     <h4 className='contacts_name'>Гавриленко Сергей Александрович</h4>
                     <p className='phone_number'>+375 (236) 21-06-05 (г. Мозырь) <br /> +375 (29) 140-58-82 (Велком)<br /> +375 (33) 683-51-13 (МТС)</p>
                 </div>
                 <div id="chief_engineer">
                     <h3>Главный инженер <br /><br /></h3>
-                    <img src="/images/kirito.jpg" alt="главинженер" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTawdOGxXg6ISHPiCRBEhXiuokkRRucHPmDg&s" alt="главинженер" />
                     <h4 className='contacts_name'>Галактионов Сергей Владимирович</h4>
                     <p className='phone_number'>+375 (17) 355-36-90<br /> +375 (17) 304-30-82 (г. Минск)<br />+375 (29) 683-34-22 (Велком)<br /> +375 (33) 665-60-22 (МТС)</p>
                 </div>
                 <div id="foreman">
                     <h3>Начальник мозырского участка ПНР</h3>
-                    <img src="/images/kirito.jpg" alt="прораб" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTawdOGxXg6ISHPiCRBEhXiuokkRRucHPmDg&s" alt="Начальник участка" />
                     <h4 className='contacts_name'>Авдошко Сергей <br /> Васильевич</h4>
                     <p className='phone_number'>+375 (236) 37-34-57 (г. Мозырь)<br /> +375 (29) 76-525-76 (МТС)</p>
                 </div>
-                <div id="foreman">
-                    <h3>Начальник мозырского участка ПНР</h3>
-                    <img src="/images/kirito.jpg" alt="прораб" />
-                    <h4 className='contacts_name'>Авдошко Сергей <br /> Васильевич</h4>
-                    <p className='phone_number'>+375 (236) 37-34-57 (г. Мозырь)<br /> +375 (29) 76-525-76 (МТС)</p>
+                <div id="accountant">
+                    <h3>Бухгалтер <br/><br/></h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS84I-f5llEVpvg_fXmnxGGCLV00_zkxsTdXtkI9vQGPntsdrJgmDeFDqQXTPtSIsBNEL0&usqp=CAU" alt="прораб" />
+                    <h4 className='contacts_name'>Филипчик Ольга <br /> Эдуардовна</h4>
+                    <p className='phone_number'>+375 (29) 660-36-44 (МТС)</p>
                 </div>
 
             </div>

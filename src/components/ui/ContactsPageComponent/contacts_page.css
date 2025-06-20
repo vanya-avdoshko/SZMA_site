@@ -22,7 +22,7 @@
 #general_manager,
 #chief_engineer,
 #foreman,
-#placeholder {
+#accountant {
   flex: 0 0 280px; 
   /* min-height: 360px;  */
   background-color: #ffffff;
@@ -38,7 +38,7 @@
 #general_manager:hover,
 #chief_engineer:hover,
 #foreman:hover,
-#placeholder:hover {
+#accountant:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
@@ -47,7 +47,7 @@
 #general_manager h3,
 #chief_engineer h3,
 #foreman h3,
-#placeholder h3 {
+#accountant h3 {
   font-size: 1.2rem; /* Reduced font size */
   color: #2c3e50;
   margin-bottom: 10px; /* Reduced margin */
@@ -58,7 +58,7 @@
 #general_manager img,
 #chief_engineer img,
 #foreman img,
-#placeholder img {
+#accountant img {
   width: 80px; /* Reduced image size */
   height: 80px;
   border-radius: 50%;
@@ -98,7 +98,7 @@
 #general_manager,
 #chief_engineer,
 #foreman,
-#placeholder {
+#accountant {
   animation: fadeInUp 0.5s ease forwards;
   opacity: 0;
 }
@@ -106,7 +106,7 @@
 #general_manager { animation-delay: 0.1s; }
 #chief_engineer { animation-delay: 0.2s; }
 #foreman { animation-delay: 0.3s; }
-#placeholder { animation-delay: 0.4s; }
+#accountant { animation-delay: 0.4s; }
 
 .requisites,
 .mapContainer {
@@ -191,7 +191,7 @@
   #general_manager,
   #chief_engineer,
   #foreman,
-  #placeholder {
+  #accountant {
     flex: 0 0 calc(50% - 7.5px); /* Two cards per row on smaller screens */
     width: 280px;
     margin-bottom: 15px;
@@ -202,7 +202,7 @@
   #general_manager,
   #chief_engineer,
   #foreman,
-  #placeholder {
+  #accountant {
     flex: 0 0 100%; /* Stack cards vertically on very small screens */
     width: 280px;
     margin: 0 auto 15px;
