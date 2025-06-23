@@ -30,5 +30,6 @@
 @media (max-width: 768px) {
   .customersContainer {
     gap: 15px;
+    flex-direction: column;
   }
 }

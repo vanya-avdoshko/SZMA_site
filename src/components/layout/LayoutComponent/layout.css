@@ -10,7 +10,7 @@
 /* Основные переменные для цветов и размеров */
 :root {
   --header-height: 80px;
-  --sidebar-width: 250px;
+  --sidebar-width: minmax(150px, 20%);
   --footer-height: 60px;
   --primary-color: #2c3e50;
   --secondary-color: #3498db;
@@ -28,7 +28,7 @@
     "sidebar content"
     "footer footer";
   grid-template-rows: var(--header-height) 1fr var(--footer-height);
-  grid-template-columns: var(--sidebar-width) 1fr;
+  grid-template-columns: var(--sidebar-width) 80%;
   min-height: 100vh;
   font-family: 'Arial', sans-serif;
   color: var(--text-color);
@@ -37,11 +37,28 @@
 /* Боковая панель навигации */
 aside {
   grid-area: sidebar;
+  position: relative;
   background-color: var(--light-bg);
   border-right: 1px solid var(--border-color);
   padding: 1.5rem 0;
+  transition: transform 0.3s ease;
 }
 
+/* Основное содержимое */
+main {
+  grid-area: content;
+  position: relative;
+  padding: 2rem 0;
+  background-color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: width 0.3s ease;
+}
+
+/* Навигация */
 nav ul {
   list-style: none;
 }
@@ -68,17 +85,6 @@ nav a.active {
   font-weight: bold;
 }
 
-/* Основное содержимое */
-main {
-  grid-area: content;
-  padding: 2rem 0;
-  background-color: #fff;
-  overflow-y: auto;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
 /* Подвал сайта */
 footer {
   grid-area: footer;
@@ -91,6 +97,7 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Навигация фиксируется под шапкой */
 .navigation {
   position: sticky;
   top: var(--header-height);
@@ -103,7 +110,7 @@ footer {
   }
 
   .app-container {
-    grid-template-columns: var(--sidebar-width) 1fr;
+    grid-template-columns: var(--sidebar-width) 80%;
   }
 
   nav a {
@@ -120,7 +127,7 @@ footer {
 /* Медиа-запросы для телефонов (до 640px) */
 @media (max-width: 640px) {
   :root {
-    --sidebar-width: 100%;
+    --sidebar-width: 200px;
     --header-height: auto;
   }
 
@@ -128,36 +135,40 @@ footer {
     grid-template-areas:
       "header"
       "content"
-      "sidebar"
       "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto auto;
+    grid-template-rows: auto 1fr auto;
   }
 
   aside {
-    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width);
+    height: 100vh;
+    transform: translateX(-100%);
+    z-index: 1000;
     border-right: none;
-    border-top: 1px solid var(--border-color);
+    transition: transform 0.3s ease;
+  }
+
+  aside.open {
+    transform: translateX(0);
+  }
+
+  main {
+    width: 100%; /* Полная ширина, когда aside скрыт */
   }
 
   nav ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 0.5rem;
-  }
-
-  nav li {
-    margin-bottom: 0;
   }
 
   nav a {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
-  }
-
-  main {
-    padding: 1rem 0.5rem;
   }
 
   footer {

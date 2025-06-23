@@ -1,7 +1,7 @@
 // import React, { useState } from 'react';
 import styles from './header.module.css';
 
-const Header = () => {
+const Header = ({ toggleSidebar, isSidebarOpen }) => {
   // const [searchQuery, setSearchQuery] = useState('');
 
   // const handleSearch = (query) => {
@@ -19,6 +19,11 @@ const Header = () => {
       <div className={styles.titleContainer}>
         <h1 className={styles.companyName}>СООО «БИК СЗМА»</h1>
       </div>
+      <button
+        className={`${styles.burgerButton} ${isSidebarOpen ? styles.active : ''}`}
+        onClick={toggleSidebar}
+        aria-label={isSidebarOpen ? 'Закрыть меню' : 'Открыть меню'}
+      >===</button>
       {/* <div className={styles.searchContainer}>
         <input
           type="text"
