@@ -23,7 +23,7 @@ const Header = ({ toggleSidebar, isSidebarOpen }) => {
         className={`${styles.burgerButton} ${isSidebarOpen ? styles.active : ''}`}
         onClick={toggleSidebar}
         aria-label={isSidebarOpen ? 'Закрыть меню' : 'Открыть меню'}
-      >===</button>
+      ><i className={`${styles.contactIcon} ${styles.burgerIcon}`}></i></button>
       {/* <div className={styles.searchContainer}>
         <input
           type="text"
