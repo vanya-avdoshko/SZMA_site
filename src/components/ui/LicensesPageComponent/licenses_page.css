@@ -2,7 +2,7 @@
 .licenses-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   font-family: 'Arial', sans-serif;
   color: #333;
 }
@@ -305,9 +305,9 @@
   .licenses-container {
     padding: 3rem 1rem;
   }
-  .license-header {
-    min-height: 250px;
-  }
+  /* .license-header {
+    min-height: 200px;
+  } */
   .license-header h1 {
     font-size: 4rem;
   }

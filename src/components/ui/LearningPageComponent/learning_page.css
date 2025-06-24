@@ -1,7 +1,7 @@
 .learning-page {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   font-family: 'Arial', sans-serif;
   color: #333;
 }
@@ -147,10 +147,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .learning-image-item {
+  /* .learning-image-item {
     flex: 0 0 calc(50% - 0.5rem);
     max-width: 300px;
-  }
+  } */
 }
 
 @media (max-width: 992px) {

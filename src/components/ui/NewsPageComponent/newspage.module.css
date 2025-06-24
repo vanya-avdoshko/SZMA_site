@@ -8,8 +8,9 @@
 
 .newsContainer {
   display: flex;
-  flex-direction: column;
-  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
   margin-top: 30px;
 }
 
@@ -19,9 +20,9 @@
     padding: 2rem 1rem;
   }
 
-  .newsContainer {
+  /* .newsContainer {
     gap: 30px;
-  }
+  } */
 }
 
 /* Медиа-запросы для планшетов (641px–1024px) */
