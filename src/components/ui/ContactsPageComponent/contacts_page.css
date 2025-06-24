@@ -1,11 +1,15 @@
 /* Контейнер для всей секции контактов */
 .contacts-content {
-  display: block;
-  justify-content: space-between;
+  /* display: block; */
+  /* justify-content: space-between; */
   gap: 20px;
   padding: 2rem 0;
   max-width: 1200px;
   margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .important_positions {

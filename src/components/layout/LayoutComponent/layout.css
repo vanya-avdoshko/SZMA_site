@@ -28,7 +28,7 @@
     "sidebar content"
     "footer footer";
   grid-template-rows: var(--header-height) 1fr var(--footer-height);
-  grid-template-columns: var(--sidebar-width) 80%;
+  grid-template-columns: var(--sidebar-width) 1fr; /* Changed to 1fr for main to take remaining space */
   min-height: 100vh;
   font-family: 'Arial', sans-serif;
   color: var(--text-color);
@@ -42,6 +42,7 @@ aside {
   border-right: 1px solid var(--border-color);
   padding: 1.5rem 0;
   transition: transform 0.3s ease;
+  z-index: 900; /* Ensure sidebar is above content when fixed */
 }
 
 /* Основное содержимое */
@@ -56,6 +57,7 @@ main {
   justify-content: center;
   align-items: flex-start;
   transition: width 0.3s ease;
+  z-index: 1; /* Ensure content is below sidebar when fixed */
 }
 
 /* Навигация */
@@ -110,7 +112,7 @@ footer {
   }
 
   .app-container {
-    grid-template-columns: var(--sidebar-width) 80%;
+    grid-template-columns: var(--sidebar-width) 1fr;
   }
 
   nav a {
@@ -147,7 +149,7 @@ footer {
     width: var(--sidebar-width);
     height: 100vh;
     transform: translateX(-100%);
-    z-index: 1000;
+    z-index: 1001; /* Higher z-index to ensure it's above content */
     border-right: none;
     transition: transform 0.3s ease;
   }
@@ -157,7 +159,8 @@ footer {
   }
 
   main {
-    width: 100%; /* Полная ширина, когда aside скрыт */
+    width: 100%;
+    padding: 1rem 0.5rem;
   }
 
   nav ul {

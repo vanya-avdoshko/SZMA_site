@@ -1,23 +1,12 @@
-/* Flex контейнер для новостей */
-.newsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Равномерное распределение */
-  gap: 50px; /* Расстояние между элементами */
-  margin-top: 30px;
-}
-
-/* Flex-элемент новости (занимает 30% ширины) */
 .newsItem {
-  flex: 0 0 calc(33.333% - 25px); /* 3 колонки с учетом gap */
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  min-width: 100px; /* Минимальная ширина элемента */
+  min-width: 200px;
 }
 
 .newsImageContainer {
@@ -100,7 +89,6 @@
   transform: translateX(3px);
 }
 
-/* Анимация для появления элементов */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -115,7 +103,6 @@
 .newsItemFlex:nth-child(2) { animation-delay: 0.2s; }
 .newsItemFlex:nth-child(3) { animation-delay: 0.3s; }
 
-/* Стили для страницы детальной новости */
 .newsDetail {
   max-width: 1200px;
   margin: 0 auto;
@@ -126,6 +113,8 @@
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   animation: fadeIn 0.5s ease forwards;
+  display: flex;
+  flex-direction: column;
 }
 
 .newsDetail h1 {
@@ -144,7 +133,6 @@
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  display: block;
   margin: 0 auto 1.5rem;
 }
 
@@ -159,13 +147,115 @@
   font-size: 1.2rem;
   color: #555;
   line-height: 1.7;
-  padding: 0;
   margin-bottom: 2rem;
 }
 
-@media (max-width: 768px) {
+/* Медиа-запросы для больших экранов (>1200px) */
+@media (min-width: 1201px) {
+  .newsItem {
+    min-width: 300px;
+  }
+
+  .newsImageContainer {
+    height: 220px;
+  }
+
+  .newsTitle {
+    font-size: 1.4rem;
+  }
+
+  .newsExcerpt {
+    font-size: 1.1rem;
+  }
+
+  .newsLink {
+    font-size: 1rem;
+  }
+
   .newsDetail {
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .newsDetail h1 {
+    font-size: 2.7rem;
+  }
+
+  .newsDetail .newsImage {
+    max-width: 900px;
+  }
+
+  .newsDetail .newsContent {
+    font-size: 1.3rem;
+  }
+}
+
+/* Медиа-запросы для планшетов (641px–1024px) */
+@media (max-width: 1024px) {
+  .newsItem {
+    min-width: 250px;
+  }
+
+  .newsImageContainer {
+    height: 180px;
+  }
+
+  .newsTitle {
+    font-size: 1.2rem;
+  }
+
+  .newsExcerpt {
+    font-size: 1rem;
+  }
+
+  .newsLink {
+    font-size: 0.95rem;
+  }
+
+  .newsDetail {
+    padding: 1.5rem 1rem;
+  }
+
+  .newsDetail h1 {
+    font-size: 2.2rem;
+  }
+
+  .newsDetail .newsImage {
+    max-width: 700px;
+  }
+
+  .newsDetail .newsContent {
+    font-size: 1.1rem;
+  }
+}
+
+/* Медиа-запросы для больших телефонов (481px–640px) */
+@media (max-width: 640px) {
+  .newsItem {
+    min-width: 100%;
+  }
+
+  .newsImageContainer {
+    height: 160px;
+  }
+
+  .newsTitle {
+    font-size: 1.1rem;
+  }
+
+  .newsExcerpt {
+    font-size: 0.9rem;
+  }
+
+  .newsLink {
+    font-size: 0.9rem;
+  }
+
+  .newsItem:hover .newsImage {
+    transform: none; /* Отключаем эффект масштабирования на телефонах */
+  }
+
+  .newsDetail {
+    padding: 1rem 0.75rem;
   }
 
   .newsDetail h1 {
@@ -176,25 +266,59 @@
     max-width: 100%;
   }
 
-  .newsDetail .newsContent {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .newsDetail {
-    padding: 1rem;
-  }
-
-  .newsDetail h1 {
-    font-size: 1.8rem;
-  }
-
   .newsDetail .newsDate {
     font-size: 0.9rem;
   }
 
   .newsDetail .newsContent {
     font-size: 1rem;
+  }
+}
+
+/* Медиа-запросы для маленьких телефонов (≤480px) */
+@media (max-width: 480px) {
+  .newsItem {
+    min-width: 100%;
+  }
+
+  .newsImageContainer {
+    height: 140px;
+  }
+
+  .newsTitle {
+    font-size: 1rem;
+  }
+
+  .newsExcerpt {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+  }
+
+  .newsLink {
+    font-size: 0.85rem;
+  }
+
+  .newsContent {
+    padding: 15px;
+  }
+
+  .newsDetail {
+    padding: 1rem 0.5rem;
+  }
+
+  .newsDetail h1 {
+    font-size: 1.8rem;
+  }
+
+  .newsDetail .newsImage {
+    max-width: 100%;
+  }
+
+  .newsDetail .newsDate {
+    font-size: 0.85rem;
+  }
+
+  .newsDetail .newsContent {
+    font-size: 0.9rem;
   }
 }

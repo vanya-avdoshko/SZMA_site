@@ -20,8 +20,8 @@
 .customerItem {
   display: flex;
   justify-content: space-between;
-  width: 900px;
-  /* width: 100%; */
+  /* width: 900px; */
+  width: 100%;
   align-items: center;
   padding: 0.75rem 1rem;
   margin-bottom: 0.5rem;
@@ -46,7 +46,20 @@
   text-align: center;
 }
 
-/* Responsive adjustments */
+@media (min-width: 1201px) {
+  /* Default styles, no changes needed */
+}
+
+@media (max-width: 1200px) {
+  .otherCustomersPage {
+    padding: 1.5rem 1rem; /* Existing, maintained */
+  }
+}
+
+@media (max-width: 1024px) {
+  /* No specific changes, fine for small desktops */
+}
+
 @media (max-width: 768px) {
   .customerItem {
     flex-direction: column;
@@ -54,15 +67,68 @@
     gap: 0.5rem;
     padding: 1rem;
   }
-
   .customerName,
   .customerLocation {
     font-size: 1rem;
   }
+  .animate-header {
+    font-size: 2.2rem;
+  }
+  .animate-subheader {
+    font-size: 1.1rem;
+  }
+  .otherCustomersList {
+    margin-top: 15px; /* Reduce margin for smaller screens */
+  }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 480px) {
   .otherCustomersPage {
-    padding: 1.5rem 1rem;
+    padding: 1rem 0.5rem;
+  }
+  .customerItem {
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+  .customerName {
+    font-size: 1rem;
+  }
+  .customerLocation {
+    font-size: 0.9rem;
+  }
+  .animate-header {
+    font-size: 2rem;
+  }
+  .animate-subheader {
+    font-size: 1rem;
+  }
+  .backLink {
+    margin-top: 1.5rem;
+  }
+  /* Adjust back link font if needed, but Tailwind may handle */
+}
+
+@media (max-width: 320px) {
+  .customerItem {
+    padding: 0.3rem;
+    margin-bottom: 0.2rem;
+  }
+  .customerName {
+    font-size: 0.9rem;
+  }
+  .customerLocation {
+    font-size: 0.8rem;
+  }
+  .animate-header {
+    font-size: 1.8rem;
+  }
+  .animate-subheader {
+    font-size: 0.9rem;
+  }
+  .otherCustomersList {
+    margin-top: 10px;
+  }
+  .backLink {
+    margin-top: 1rem;
   }
 }

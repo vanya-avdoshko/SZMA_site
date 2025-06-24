@@ -126,43 +126,150 @@
   color: #2c3e50;
 }
 
+@media (min-width: 1201px) {
+  .learning-page {
+    padding: 3rem 0;
+  }
+  .learning-page h1 {
+    font-size: 3rem;
+  }
+  .learning-info h2 {
+    font-size: 2rem;
+  }
+  .learning-info .first-word {
+    font-size: 2rem;
+  }
+  .learning-info .title-rest {
+    font-size: 1.4rem;
+  }
+  .learning-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .learning-image-item {
+    flex: 0 0 calc(50% - 0.5rem);
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .learning-info {
+    min-width: 400px;
+  }
+  .learning-images {
+    min-width: 250px;
+  }
+  .learning-image-item {
+    max-width: 250px;
+  }
+}
+
 @media (max-width: 768px) {
   .learning-block {
     width: 90%;
   }
-
   .learning-content {
     flex-direction: column;
+    gap: 1.5rem;
   }
-
   .learning-images {
     flex-direction: column;
     align-items: center;
   }
-
-  .image-item {
+  .learning-image-item {
     max-width: 100%;
   }
 }
 
 @media (max-width: 576px) {
+  .learning-page {
+    padding: 1rem 0;
+  }
   .learning-page h1 {
     font-size: 2rem;
   }
-
   .learning-info h2 {
     font-size: 1.5rem;
   }
-
   .learning-info .first-word {
     font-size: 1.5rem;
   }
-
   .learning-info .title-rest {
     font-size: 1rem;
   }
-
   .detail-item strong {
     font-size: 1rem;
+  }
+  .learning-content {
+    gap: 1.5rem;
+  }
+  .learning-container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .learning-block {
+    width: 95%;
+    padding: 1rem;
+  }
+  .learning-info {
+    min-width: 100%;
+  }
+  .learning-images {
+    min-width: 100%;
+  }
+  .learning-info h2 {
+    font-size: 1.2rem;
+  }
+  .learning-info .first-word {
+    font-size: 1.2rem;
+  }
+  .learning-info .title-rest {
+    font-size: 0.9rem;
+  }
+  .detail-item strong {
+    font-size: 0.9rem;
+  }
+  .learning-image-item {
+    max-width: 100%;
+    height: auto;
+  }
+  .learning-content {
+    gap: 1rem;
+  }
+  .learning-container {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .learning-page {
+    padding: 0.5rem 0;
+  }
+  .learning-block {
+    padding: 0.8rem;
+  }
+  .learning-info h2 {
+    font-size: 1rem;
+  }
+  .learning-info .first-word {
+    font-size: 1rem;
+  }
+  .learning-info .title-rest {
+    font-size: 0.8rem;
+  }
+  .detail-item strong {
+    font-size: 0.8rem;
+  }
+  .learning-image-item {
+    max-width: 100%;
+  }
+  .learning-content {
+    gap: 0.8rem;
+  }
+  .learning-container {
+    gap: 1rem;
   }
 }

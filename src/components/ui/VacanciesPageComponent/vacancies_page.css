@@ -8,9 +8,9 @@
     margin: 0 auto;    /* Центрирование */
 }
 
-.license-header h1{
+/* .license-header h1{
     width: 1200px;
-}
+} */
 
 /* .vacancies-page h1 {
     color: #333;
@@ -41,7 +41,7 @@
 
 .vacancy_image {
     float: left;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     margin-top: -10px;
     width: 80px;
     height: 80px;
@@ -121,5 +121,63 @@
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (min-width: 1201px) {
+    .no_vacancies {
+        min-height: 400px;
+    }
+    .no_vacancies p {
+        font-size: 3.4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .no_vacancies {
+        min-height: 350px;
+    }
+    .no_vacancies p {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .no_vacancies {
+        min-height: 300px;
+    }
+    .no_vacancies p {
+        font-size: 2.5rem;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .no_vacancies {
+        min-height: 250px;
+    }
+    .no_vacancies p {
+        font-size: 2rem;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .no_vacancies {
+        min-height: 200px;
+    }
+    .no_vacancies p {
+        font-size: 1.8rem;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .no_vacancies {
+        min-height: 150px;
+    }
+    .no_vacancies p {
+        font-size: 1.5rem;
+        padding: 5px 8px;
     }
 }

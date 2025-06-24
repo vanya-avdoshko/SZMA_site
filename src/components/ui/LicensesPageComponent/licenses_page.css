@@ -300,47 +300,123 @@
   box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
 }
 
-/* Адаптивность */
+/* Адаптивность для всех размеров экрана */
+@media (min-width: 1201px) {
+  .licenses-container {
+    padding: 3rem 1rem;
+  }
+  .license-header {
+    min-height: 250px;
+  }
+  .license-header h1 {
+    font-size: 4rem;
+  }
+  .image-item {
+    max-width: 180px; /* Slightly larger for large screens */
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+}
+
 @media (max-width: 992px) {
-  .image-grid {
-    grid-template-columns: 1fr;
+  .license-info {
+    min-width: 300px;
+  }
+  .image-item {
+    max-width: 140px; /* Smaller images */
+    flex: 0 0 calc(50% - 0.5rem);
   }
 }
 
 @media (max-width: 768px) {
   .main-license {
     flex-direction: column;
+    padding: 1.5rem;
   }
-
   .documents-grid {
     grid-template-columns: 1fr;
   }
-
   .document-card {
     flex-direction: column;
   }
-
   .document-icon {
     padding: 1rem;
+  }
+  .license-header {
+    min-height: 150px;
+  }
+  .image-item {
+    max-width: 130px; /* Even smaller */
+    flex: 0 0 calc(50% - 0.5rem);
   }
 }
 
 @media (max-width: 576px) {
+  .licenses-container {
+    padding: 1rem 0;
+  }
   .license-header h1 {
     font-size: 2rem;
   }
-
   .license-info h2,
   .additional-documents h2 {
     font-size: 1.5rem;
   }
-
   .documents-grid {
     grid-template-columns: 1fr;
   }
-
   .document-details {
     flex-direction: column;
     gap: 0.5rem;
+  }
+  .license-info p {
+    font-size: 1rem;
+  }
+  .image-item {
+    max-width: 120px; /* Further reduced */
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+  .image-caption {
+    font-size: 0.8rem; /* Smaller caption text */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-license {
+    padding: 1rem;
+  }
+  .license-header {
+    min-height: 120px;
+  }
+  .license-header h1 {
+    font-size: 1.8rem;
+  }
+  .license-header p {
+    font-size: 0.9rem;
+  }
+  .image-item {
+    max-width: 100px; /* Very small images */
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+  .image-caption {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .license-info {
+    min-width: 100%;
+  }
+  .license-images {
+    min-width: 100%;
+  }
+  .document-content {
+    padding: 1rem;
+  }
+  .image-item {
+    max-width: 80px; /* Smallest size for tiny screens */
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+  .image-caption {
+    font-size: 0.6rem;
   }
 }

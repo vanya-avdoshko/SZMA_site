@@ -2,6 +2,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 0;
+  overflow: hidden;
 }
 
 .projects_table {
@@ -71,27 +72,104 @@
   min-width: 150px;
 }
 
-/* Адаптивность */
-@media (max-width: 992px) {
-  .projects-table {
-    display: block;
-    overflow-x: auto;
+/* Медиа-запросы для больших экранов (>1200px) */
+@media (min-width: 1201px) {
+  .projects_content {
+    padding: 2rem 1.5rem;
   }
-  
-  .projects_table th, 
+
+  .projects_content h1 {
+    font-size: 2.7rem;
+  }
+
+  .projects_table th,
   .projects_table td {
-    min-width: 200px;
+    padding: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
-@media (max-width: 768px) {
-  .projects_table th {
-    font-size: 1rem;
-    padding: 0.8rem;
+/* Медиа-запросы для планшетов (641px–1024px) */
+@media (max-width: 1024px) {
+  .projects_content {
+    padding: 1.5rem 1rem;
   }
-  
+
+  .projects_content h1 {
+    font-size: 2.2rem;
+  }
+
+  .projects_table th,
+  .projects_table td {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Медиа-запросы для больших телефонов (481px–640px) */
+@media (max-width: 640px) {
+  .projects_content {
+    padding: 1rem 0.75rem;
+  }
+
+  .projects_content h1 {
+    font-size: 2rem;
+  }
+
+  .projects_table {
+    display: block; /* Переключаем таблицу в блочный режим */
+    overflow-x: auto; /* Добавляем горизонтальную прокрутку */
+  }
+
+  .projects_table th,
   .projects_table td {
     padding: 0.8rem;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+  }
+
+  .projects_table th {
+    display: none; 
+  }
+
+  .projects_table td {
+    display: block;
+    text-align: left;
+    border-bottom: none;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  .projects_table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0.8rem;
+    width: 45%;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+}
+
+/* Медиа-запросы для маленьких телефонов (≤480px) */
+@media (max-width: 480px) {
+  .projects_content {
+    padding: 1rem 0.5rem;
+  }
+
+  .projects_content h1 {
+    font-size: 1.8rem;
+  }
+
+  .projects_table th,
+  .projects_table td {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  /* .projects_table td {
+    padding-left: 45%;
+  } */
+
+  .projects_table td:before {
+    width: 40%;
   }
 }
