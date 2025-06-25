@@ -1,21 +1,15 @@
 // import React, { useState } from 'react';
 import styles from './header.module.css';
+import { NavLink } from 'react-router-dom';
 
 const Header = ({ toggleSidebar, isSidebarOpen }) => {
-  // const [searchQuery, setSearchQuery] = useState('');
-
-  // const handleSearch = (query) => {
-  //   setSearchQuery(query);
-  //   // Базовая логика поиска: вывод запроса в консоль
-  //   console.log('Поиск по запросу:', query);
-  //   // Здесь можно добавить фильтрацию контента или переход на страницу результатов
-  // };
-
   return (
     <header className={styles.header}>
-      <div className={styles.logoContainer}>
-        <img src="/images/biklogo3.gif" alt="Логотип предприятия" className={styles.logo} />
-      </div>
+      <NavLink to='/'>
+        <div className={styles.logoContainer}>
+          <img src="/images/biklogo3.gif" alt="Логотип предприятия" className={styles.logo} />
+        </div>
+      </NavLink>
       <div className={styles.titleContainer}>
         <h1 className={styles.companyName}>СООО «БИК СЗМА»</h1>
       </div>
@@ -24,21 +18,8 @@ const Header = ({ toggleSidebar, isSidebarOpen }) => {
         onClick={toggleSidebar}
         aria-label={isSidebarOpen ? 'Закрыть меню' : 'Открыть меню'}
       ><i className={`${styles.contactIcon} ${styles.burgerIcon}`}></i></button>
-      {/* <div className={styles.searchContainer}>
-        <input
-          type="text"
-          placeholder="Поиск по сайту..."
-          className={styles.searchInput}
-          value={searchQuery}
-          onChange={(e) => handleSearch(e.target.value)}
-          aria-label="Поиск по сайту"
-        />
-        <button className={styles.searchButton}><i className={`${styles.contactIcon} ${styles.searchIcon}`}></i></button>
-      </div> */}
 
-      <div className={styles.englishPage}>
-
-      </div>
+      {/* <div className={styles.englishPage}></div> */}
 
       <div className={styles.contactInfo}>
         <div className={styles.contactItem}>

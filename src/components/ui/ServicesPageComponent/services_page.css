@@ -63,9 +63,9 @@
 }
 
 @media (max-width: 576px) {
-    .services_block h1 {
+    /* .services_block h1 {
         font-size: 2rem;
-    }
+    } */
 
     .services_content p {
         font-size: 1rem;

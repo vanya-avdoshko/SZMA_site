@@ -138,3 +138,86 @@
     }
 }
 
+@media (min-width: 1025px) {
+    .slider {
+        max-height: 400px;
+    }
+    .prev, .next {
+        font-size: 48px;
+    }
+    .page_dot {
+        height: 12px;
+        width: 12px;
+        margin: 0 6px;
+    }
+}
+
+/* Media queries for tablets (641px–1024px) */
+@media (max-width: 1024px) {
+    .slider {
+        max-height: 350px;
+    }
+    .prev, .next {
+        font-size: 40px;
+        padding: 8px;
+    }
+    .page_dot {
+        height: 14px;
+        width: 14px;
+        margin: 0 5px;
+    }
+}
+
+/* Media queries for phones (≤640px) */
+@media (max-width: 640px) {
+    .slider {
+        max-height: 300px;
+        margin-top: -40px;
+        margin-bottom: 24px;
+    }
+    .prev, .next {
+        font-size: 36px;
+        padding: 6px;
+    }
+    .page_dot {
+        height: 8px;
+        width: 8px;
+        margin: 0 4px;
+    }
+}
+
+/* Media queries for small phones (≤480px) */
+@media (max-width: 480px) {
+    .slider {
+        max-height: 250px;
+        margin-top: -30px;
+        margin-bottom: 16px;
+    }
+    .prev, .next {
+        font-size: 28px;
+        padding: 5px;
+    }
+    .page_dot {
+        height: 7px;
+        width: 7px;
+        margin: 0 3px;
+    }
+}
+
+/* Media queries for very small phones (≤320px) */
+@media (max-width: 320px) {
+    .slider {
+        max-height: 200px;
+        margin-top: -20px;
+        margin-bottom: 12px;
+    }
+    .prev, .next {
+        font-size: 24px;
+        padding: 4px;
+    }
+    .page_dot {
+        height: 6px;
+        width: 6px;
+        margin: 0 2px;
+    }
+}

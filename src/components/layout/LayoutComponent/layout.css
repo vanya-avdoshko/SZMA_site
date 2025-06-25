@@ -18,6 +18,7 @@
   --light-bg: #f5f7fa;
   --border-color: #ddd;
   --background-color: rgb(37, 46, 49);
+  --line-height: 1.7;
 }
 
 /* Основная сетка приложения */
@@ -58,6 +59,7 @@ main {
   align-items: flex-start;
   transition: width 0.3s ease;
   z-index: 1; /* Ensure content is below sidebar when fixed */
+  /* line-height: var(--line-height); */
 }
 
 /* Навигация */
@@ -144,14 +146,15 @@ footer {
 
   aside {
     position: fixed;
-    top: 0;
+    top: 3rem;
     left: 0;
     width: var(--sidebar-width);
     height: 100vh;
     transform: translateX(-100%);
-    z-index: 1001; /* Higher z-index to ensure it's above content */
+    z-index: 999; /* Higher z-index to ensure it's above content */
     border-right: none;
     transition: transform 0.3s ease;
+    /* padding-top: var(--header-height); */
   }
 
   aside.open {
