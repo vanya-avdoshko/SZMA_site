@@ -19,10 +19,6 @@
   .newsPage {
     padding: 2rem 1rem;
   }
-
-  /* .newsContainer {
-    gap: 30px;
-  } */
 }
 
 /* Медиа-запросы для планшетов (641px–1024px) */
@@ -43,6 +39,8 @@
   }
 
   .newsContainer {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
     gap: 15px;
   }
 }

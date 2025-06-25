@@ -163,6 +163,29 @@
   margin-bottom: 2rem;
 }
 
+/* Медиа-запросы для планшетов (641px–1024px) */
+@media (max-width: 1024px) {
+  .newsItem {
+    flex: 0 0 calc(50% - 25px); /* 2 колонки */
+  }
+}
+
+/* Медиа-запросы для больших телефонов (481px–640px) */
+@media (max-width: 640px) {
+  .newsItem {
+    flex: 0 0 100%; /* Full width for single column */
+    max-width: 100%;
+  }
+}
+
+/* Медиа-запросы для маленьких телефонов (≤480px) */
+@media (max-width: 480px) {
+  .newsItem {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .newsDetail {
     padding: 1.5rem;
