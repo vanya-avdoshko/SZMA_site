@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
 .header {
   grid-area: header;
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -6,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -37,7 +39,7 @@
   height: auto;
   border-radius: 10%;
   border: 2px solid white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .titleContainer {
@@ -47,17 +49,39 @@
 
 .companyName {
   font-size: 2rem;
-  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
   padding: 0 10px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  letter-spacing: 2.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 10px rgba(255, 255, 255, 0.3);
+  letter-spacing: 3px;
+  position: relative;
+  display: inline-block;
+  animation: fadeInTitle 1.5s ease-out forwards;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.companyName:hover {
+  transform: scale(1.05);
+  color: #f0f0f0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .companyDescription {
   font-size: 1.2rem;
   font-weight: normal;
   padding: 0 10px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .searchContainer {
@@ -103,7 +127,10 @@
   flex: 0 0 auto;
   display: flex;
   align-items: center;
+  font-family: 'Playfair Display', serif;
   gap: 1rem;
+  animation: fadeInTitle 1.5s ease-out forwards;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .contactItem {
@@ -115,7 +142,7 @@
 .contactIcon {
   font-size: 1.2rem;
   color: white;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   display: inline-block;
   width: 24px;
@@ -147,7 +174,7 @@
 
 .contactText {
   font-size: 1rem;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .phoneLink {
@@ -198,9 +225,11 @@
   .header {
     padding: 0.5rem 2rem;
   }
+
   .companyName {
     font-size: 2.2rem;
   }
+
   .searchInput {
     width: 200px;
   }
@@ -211,26 +240,33 @@
   .header {
     padding: 0.5rem 1.5rem;
   }
+
   .logo {
     width: 80px;
   }
+
   .companyName {
     font-size: 1.8rem;
     letter-spacing: 2px;
   }
+
   .companyDescription {
     font-size: 1rem;
   }
+
   .searchContainer {
     margin-right: 0.5rem;
   }
+
   .searchInput {
     width: 150px;
     font-size: 0.95rem;
   }
+
   .contactInfo {
     gap: 0.75rem;
   }
+
   .contactText {
     font-size: 0.95rem;
   }
@@ -244,20 +280,24 @@
     padding: 0.5rem 1rem;
     /* position: relative; */
   }
+
   .burgerButton {
     display: flex;
     margin-right: 0.5rem;
   }
+
   .logoContainer {
     display: flex;
     align-items: center;
   }
+
   .titleContainer {
     display: flex;
     align-items: center;
     flex: 1;
     justify-content: center;
   }
+
   .centerContainer {
     display: flex;
     align-items: center;
@@ -265,20 +305,25 @@
     justify-content: center;
     flex: 1;
   }
+
   .companyName {
     font-size: 1.3rem;
     letter-spacing: 1px;
     padding: 0 5px;
   }
+
   .companyDescription {
     display: none;
   }
+
   .logo {
     width: 60px;
   }
+
   .searchContainer {
     display: none;
   }
+
   .contactInfo {
     display: none;
   }
@@ -289,17 +334,21 @@
   .header {
     padding: 0.5rem;
   }
+
   .companyName {
     font-size: 1.2rem;
     letter-spacing: 0.8px;
   }
+
   .logo {
     width: 50px;
   }
+
   .burgerButton {
     width: 25px;
     height: 18px;
   }
+
   .burgerButton span {
     height: 2px;
   }
@@ -310,17 +359,21 @@
   .header {
     padding: 0.3rem;
   }
+
   .companyName {
     font-size: 1rem;
     letter-spacing: 0.5px;
   }
+
   .logo {
     width: 40px;
   }
+
   .burgerButton {
     width: 20px;
     height: 15px;
   }
+
   .burgerButton span {
     height: 2px;
   }

@@ -76,6 +76,7 @@ nav li {
 nav a {
   display: block;
   padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
   color: var(--text-color);
   transition: all 0.2s;
