@@ -44,6 +44,7 @@ aside {
   padding: 1.5rem 0;
   transition: transform 0.3s ease;
   z-index: 900; /* Ensure sidebar is above content when fixed */
+  /* overflow-y: auto; */
 }
 
 /* Основное содержимое */
@@ -51,7 +52,8 @@ main {
   grid-area: content;
   position: relative;
   padding: 2rem 0;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-image: url('https://pbs.twimg.com/profile_images/957207313257025536/3z1adRek_400x400.jpg');
   overflow-y: auto;
   overflow-x: hidden;
   display: flex;

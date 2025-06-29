@@ -79,9 +79,43 @@
   animation: fadeIn 0.5s ease forwards;
 }
 
+.articles-section {
+  animation: fadeIn 0.5s ease forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+/* Стили для семантических тегов */
+strong {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+em {
+  font-style: italic;
+  color: #3498db;
+}
+
+mark {
+  background-color: #ffff99;
+  padding: 0 0.2em;
+}
+
+/* Анимация для заголовка */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.animated-title:hover {
+  animation: pulse 2s infinite;
+}
+
 @media (max-width: 768px) {
   .homeContainer {
     padding: 1.5rem;
+    margin-top: -32px;
   }
 
   .articles-section {
@@ -105,10 +139,12 @@
 @media (max-width: 576px) {
   .homeContainer {
     padding: 1rem;
+    margin-top: -24px;
+    line-height: 0.9;
   }
 
   .page-title {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .articles-section p,
@@ -119,10 +155,4 @@
   .slider {
     max-height: 250px;
   }
-}
-
-.articles-section {
-  animation: fadeIn 0.5s ease forwards;
-  animation-delay: 0.2s;
-  opacity: 0;
 }

@@ -63,7 +63,7 @@ const LearningPage = () => {
     return (
         <div className="learning-page">
             <div className="license-header">
-                <h1 className="animate-header">Сертификаты об обучении сотрудников</h1>
+                <h1 className="animate-header">Сертификаты об обучении</h1>
                 <p className="animate-subheader">Профессионалы, прошедшие специализированное обучение</p>
             </div>
             <div className="learning-container">
