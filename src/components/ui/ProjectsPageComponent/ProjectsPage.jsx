@@ -20,6 +20,214 @@ const ProjectsPage = () => {
         <tbody>
           <tr>
             <td className={styles.project_name}>
+              ПНР по модернизации реакторных блоков секции 300/2 ЛК-6У №2 (2-я очередь)
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>УП «Полесье-Промжилстрой»</td>
+            <td className={styles.project_year}>2024</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              ПНР по модернизации реакторных блоков секции 300/2 ЛК-6У №1 (1-я очередь)
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>УП «Полесье-Промжилстрой»</td>
+            <td className={styles.project_year}>2024</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Реконструкция открытого склада комовой серы
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>УП «Полесье-Промжилстрой»</td>
+            <td className={styles.project_year}>2024</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              ПНР по возведению автотракторной мойки в а.г. Дудрова, филиал «Дуброва-АГРО» РУП «Гомельэнерго»
+            </td>
+            <td className={styles.project_customer}>Филиал «Дуброва-АГРО» РУП «Гомельэнерго» Светлогорского района</td>
+            <td className={styles.project_contractor}>ОДО «ПроКТОр»</td>
+            <td className={styles.project_year}>2024</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              ПНР по изменению технологической схемы оборотного водоснабжения БОВ-7 (2-я очередь)
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>СООО «БИК СЗМА»</td>
+            <td className={styles.project_year}>2024</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              ПНР АСУ ТП и КИП установки гидроочистки дизельного топлива и керосина Л-24/6
+            </td>
+            <td className={styles.project_customer}>ООО «КИНЕФ», РФ</td>
+            <td className={styles.project_contractor}>ООО «СПИК СЗМА»</td>
+            <td className={styles.project_year}>2024</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Реконструкция здания участка сантехработ РПМ
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>УП «Полесье-Промжилстрой»</td>
+            <td className={styles.project_year}>2024</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Пусконаладочные работы автоматизации технологии на объекте «Строительство склада сильнодействующих ядовитых веществ (СДЯВ)»
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>МСУ «Электроналадка» ОАО «Трест Белпромналадка»</td>
+            <td className={styles.project_year}>2023</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Пусконаладочные работы на объекте «Строительство маслосклада и отапливаемых складских помещений УПВ»
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>СООО «БИК СЗМА»</td>
+            <td className={styles.project_year}>2023</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Сборка шкафов управления для производства ООО «СПИК СЗМА»
+            </td>
+            <td className={styles.project_customer}>ООО «СПИК СЗМА»</td>
+            <td className={styles.project_contractor}>ООО «СПИК СЗМА»</td>
+            <td className={styles.project_year}>2023</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Сборка шкафов управления для производства ООО «СПИК СЗМА»
+            </td>
+            <td className={styles.project_customer}>ООО «СПИК СЗМА»</td>
+            <td className={styles.project_contractor}>ООО «СПИК СЗМА»</td>
+            <td className={styles.project_year}>2023</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Реконструкция котельной в санатории «Лесное»
+            </td>
+            <td className={styles.project_customer}>Санаторий «Лесное» КГБ РБ</td>
+            <td className={styles.project_contractor}>ОДО «ПроКТОр»</td>
+            <td className={styles.project_year}>2023</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Строительство птичника 4Б в д. Ляховцы Мозырского района
+            </td>
+            <td className={styles.project_customer}>ОДО «ПроКТОр»</td>
+            <td className={styles.project_contractor}>ОДО «ПроКТОр»</td>
+            <td className={styles.project_year}>2023</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Модернизация блоков предварительной гидроочистки секции 200 ЛК-6У №1 и №2 (2-я очередь)
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>УП «Полесье-Промжилстрой»</td>
+            <td className={styles.project_year}>2023</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Наладка регуляторов горячего водоснабжения и системы отопления ИТП на Хойникском заводе ЖБИ
+            </td>
+            <td className={styles.project_customer}>ИТП Хойникский завод ЖБИ ОАО Мозырский домостроительный комбинат</td>
+            <td className={styles.project_contractor}>СООО «БИК СЗМА»</td>
+            <td className={styles.project_year}>2023</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              ПНР по установке производства серы «Сера-1» на объекте «Комплекс гидрокрекинга тяжелых нефтяных остатков»
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>СООО «БИК СЗМА»</td>
+            <td className={styles.project_year}>2019-2023</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Замена физически устаревшего оборудования АСУ ТП УЛГК 2-й пусковой комплекс
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>СООО «БИК СЗМА»</td>
+            <td className={styles.project_year}>2021-2023</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              ПНР АТХ комбинированной установки гидрокрекинга на объекте «Комплекс гидрокрекинга тяжелых нефтяных остатков»
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>МСУ «Электроналадка» ОАО «Трест Белпромналадка»</td>
+            <td className={styles.project_year}>2019-2023</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Комплекс пуско-наладочных работ на нефтеперерабатывающем заводе Paz Ashdod
+            </td>
+            <td className={styles.project_customer}>Нефтеперерабатывающий завод Paz Ashdod, Израиль</td>
+            <td className={styles.project_contractor}>АО «СПИК СЗМА»</td>
+            <td className={styles.project_year}>2022</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Комплекс пуско-наладочных работ на нефтеперерабатывающем заводе BAZAN Group
+            </td>
+            <td className={styles.project_customer}>Нефтеперерабатывающий завод BAZAN Group, Израиль</td>
+            <td className={styles.project_contractor}>АО «СПИК СЗМА»</td>
+            <td className={styles.project_year}>2022</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Пусконаладочные работы по установке производства водорода на объекте «Комплекс гидрокрекинга тяжелых нефтяных остатков»
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>МСУ «Электроналадка» ОАО «Трест Белпромналадка»</td>
+            <td className={styles.project_year}>2019-2021</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Пусконаладочные работы по КИП и А (АТХ) 1-го пускового комплекса объекта «Азотная станция и воздушная компрессорная №4 (АС и ВК №4)»
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>СООО «БИК СЗМА»</td>
+            <td className={styles.project_year}>2020-2021</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              Замена печи П1 нагрева мазута и оборудования КИП и А вакуумного блока УПБ на установке по производству битума
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>СООО «БИК СЗМА»</td>
+            <td className={styles.project_year}>2020-2021</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              ПНР АСУТП операторной с распределительной трансформаторной подстанцией РТП-40 и операторной БОВ-6, РКС-6 и УОПК на объекте «Комплекс гидрокрекинга тяжелых нефтяных остатков»
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>ОАО «Белэлектро-монтажналадка»</td>
+            <td className={styles.project_year}>2019-2021</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              ПНР АТХ на объекте «Комплекс гидрокрекинга тяжелых нефтяных остатков. Комбинированная установка гидрокрекинга».
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>МСУ Электроналадка, Трест Белпромналадка</td>
+            <td className={styles.project_year}>2019-2020</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
+              ПНР по установке производства серы Сера-1 на объекте «Комплекс гидрокрекинга тяжелых нефтяных остатков».
+            </td>
+            <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_contractor}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
+            <td className={styles.project_year}>2019-2020</td>
+          </tr>
+          <tr>
+            <td className={styles.project_name}>
               ПНР АТХ на объекте «Комплекс гидрокрекинга тяжелых нефтяных остатков. Комбинированная установка гидрокрекинга».
             </td>
             <td className={styles.project_customer}>ОАО «Мозырский нефтеперерабатывающий завод»</td>
