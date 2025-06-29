@@ -1,77 +1,159 @@
 .services_block {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-    font-family: 'Arial', sans-serif;
-    color: #333;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
-/* .services_block h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #2c3e50;
-    margin-bottom: 3rem;
+/* .hero {
+  background-image: url('/path/to/industrial-safety-image.jpg'); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 5rem 0;
+  text-align: center;
+  color: white;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
 } */
 
 .services_content {
-    width: 80%;
-    margin: 0 auto;
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 .services_content p {
-    font-size: 1.3rem;
-    font-weight: bolder;
-    color: #555;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.services_content ul {
-    list-style-type: disc;
-    padding-left: 2rem;
-    margin-bottom: 1.5rem;
+.services_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
-.services_content li {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.7;
-    margin-bottom: 1rem;
+.service_card {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  background: white;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
-/* .services_content ul ::first-letter {
-    font-size: 1.4rem;
-    color: #2c3e50;
-    font-weight: bolder;
-
-} */
-
-.services_content li:hover {
-    color: #3498db;
-    transition: color 0.3s ease;
+.service_card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
 }
 
+.service_icon {
+  font-size: 2.5rem;
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+.service_card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.service_card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cta button {
+  background-color: #3498db;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta button:hover {
+  background-color: #2980b9;
+}
 
 @media (max-width: 768px) {
-    .services_content {
-        width: 90%;
-    }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .services_content p {
+    font-size: 1.1rem;
+  }
+
+  .services_list {
+    grid-template-columns: 1fr;
+  }
+
+  .service_card h3 {
+    font-size: 1.3rem;
+  }
+
+  .service_card p {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 576px) {
-    /* .services_block h1 {
-        font-size: 2rem;
-    } */
+  .hero {
+    padding: 3rem 0;
+  }
 
-    .services_content p {
-        font-size: 1rem;
-    }
+  .hero h1 {
+    font-size: 2rem;
+  }
 
-    .services_content li {
-        font-size: 1rem;
-    }
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .services_content {
+    padding: 1rem;
+  }
 }
