@@ -13,10 +13,12 @@ import VacanciesPage from "./components/ui/VacanciesPageComponent/VacanciesPage"
 import ServicesPage from "./components/ui/ServicesPageComponent/ServicesPage";
 import CustomersPage from "./components/ui/CustomersPageComponent/CustomersPage";
 import OtherCustomersPage from "./components/ui/OtherCustomersPageComponent/OtherCustomersPage";
+import ScrollToTop from "./components/layout/ScrollComponent/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Layout/>}>,
           <Route index element={<HomePage/>}/>,
