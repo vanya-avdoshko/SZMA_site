@@ -44,25 +44,25 @@ const LicensesPage = () => {
           <div className="image-grid">
             <a href='/images/license_1.jpg' target='_blank'>
               <div className="image-item">
-                <img src='/images/license_1.jpg' alt="Лицензия - страница 1" />
+                <img src='/images/license_1.jpg' alt="Лицензия - страница 1" loading='lazy' />
                 <div className="image-caption">Страница 1</div>
               </div>
             </a>
             <a href='/images/license_2.jpg' target='_blank'>
               <div className="image-item">
-                <img src='/images/license_2.jpg' alt="Лицензия - страница 2" />
+                <img src='/images/license_2.jpg' alt="Лицензия - страница 2" loading='lazy' />
                 <div className="image-caption">Страница 2</div>
               </div>
             </a>
             <a href='/images/license_3.jpg' target='_blank'>
               <div className="image-item">
-                <img src='/images/license_3.jpg' alt="Лицензия - страница 3" />
+                <img src='/images/license_3.jpg' alt="Лицензия - страница 3" loading='lazy' />
                 <div className="image-caption">Страница 3</div>
               </div>
             </a>
             <a href='/images/license_4.jpg' target='_blank'>
               <div className="image-item">
-                <img src='/images/license_4.jpg' alt="Лицензия - страница 4" />
+                <img src='/images/license_4.jpg' alt="Лицензия - страница 4" loading='lazy' />
                 <div className="image-caption">Страница 4</div>
               </div>
             </a>
@@ -84,7 +84,7 @@ const LicensesPage = () => {
             </div> */}
             <div className="document-content">
               <h3>Сертификат БЕЛГИМ</h3>
-              <p>Сертификат соответствия требованиям международного стандарта ISO 9001:2015. Подтверждает, что система менеджмента качества компании соответствует международным стандартам.</p>
+              <p>Сертификат соответствия требованиям международного стандарта СТБ ISO 9001-2015. Подтверждает, что система менеджмента качества компании соответствует международным стандартам.</p>
               <div className="document-details">
                 <div className="detail">
                   <span>Формат:</span> PDF
@@ -110,7 +110,7 @@ const LicensesPage = () => {
             </div> */}
             <div className="document-content">
               <h3>Отзывы предприятий</h3>
-              <p>какое-нибудь описание </p>
+              <p>Благодарность компании СООО "БИК СЗМА" за отличную работу по выполнению пусконаладочных работ в соответствии с заключенным рамочным контрактом с компанией Meptagon Ltd, Израиль.</p>
               <div className="document-details">
                 <div className="detail">
                   <span>Формат:</span> PDF

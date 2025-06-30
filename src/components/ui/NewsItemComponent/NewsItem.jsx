@@ -9,6 +9,7 @@ const NewsItem = ({title, date, excerpt, image, link}) => {
           src={image} 
           alt={title} 
           className={styles.newsImage}
+          loading='lazy'
         />
       </div>
       

@@ -14,7 +14,7 @@ const NewsDetail = () => {
   return (
     <div className={styles.newsDetail}>
       <h1>{newsItem.title}</h1>
-      <img src={newsItem.image} alt={newsItem.title} className={styles.newsImage} />
+      <img src={newsItem.image} alt={newsItem.title} className={styles.newsImage} loading='lazy'/>
       <div className={styles.newsDate}>{newsItem.date}</div>
       <div className={styles.newsContent}>{newsItem.content}</div>
     </div>
