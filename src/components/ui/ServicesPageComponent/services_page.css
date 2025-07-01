@@ -5,42 +5,6 @@
   padding: 2rem 1rem;
 }
 
-/* .hero {
-  background-image: url('/path/to/industrial-safety-image.jpg'); 
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  padding: 5rem 0;
-  text-align: center;
-  color: white;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
-}
-
-.hero h1,
-.hero p {
-  position: relative;
-  z-index: 1;
-  margin: 0;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.5rem;
-} */
-
 .services_content {
   max-width: 1200px;
   margin: 0 auto;
@@ -115,14 +79,6 @@
 }
 
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero p {
-    font-size: 1.2rem;
-  }
-
   .services_content p {
     font-size: 1.1rem;
   }
@@ -141,18 +97,9 @@
 }
 
 @media (max-width: 576px) {
-  .hero {
-    padding: 3rem 0;
+  .services_block {
+    padding: 1rem 0;
   }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
   .services_content {
     padding: 1rem;
   }

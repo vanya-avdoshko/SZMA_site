@@ -59,7 +59,8 @@ const ContactsPage = () => {
                     <h4 className='contacts_name'>Филипчик Ольга <br /> Эдуардовна</h4>
                     <p className='phone_number'>
                         <FaPhone />
-                        <a href="tel:+375296603644">+375 (29) 660-36-44</a> (МТС)
+                        <a href="tel:+375296603644">+375 (29) 660-36-44</a> (МТС)<br />
+                        <a href="tel:+375296833422">+375 (29) 683-34-22</a> (Велком)
                     </p>
                 </div>
             </div>

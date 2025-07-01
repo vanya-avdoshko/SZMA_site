@@ -151,6 +151,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  justify-content: center;
 }
 
 .image-item {
@@ -164,10 +165,11 @@
   /* Пропорции A4 */
   background-color: white;
   max-width: 70%;
+  height: auto;
   /* Уменьшение размера блока на 30% */
   justify-self: center;
   /* Выравнивание по центру в ячейке сетки */
-  margin-left: -20px;
+  /* margin-left: -20px; */
 }
 
 .image-item:hover {
@@ -320,9 +322,13 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .license-info {
     min-width: 300px;
+  }
+
+  .license-header {
+    margin-top: -3.5rem;
   }
 
   .image-item {
@@ -352,6 +358,7 @@
 
   .license-header {
     min-height: 150px;
+    margin-bottom: 2rem;
   }
 
   .image-item {
@@ -369,6 +376,7 @@
   .license-header {
     min-height: 1rem;
     margin-top: -1.5rem;
+    margin-bottom: 1rem;
 
   }
 
@@ -412,9 +420,9 @@
     padding: 1rem;
   }
 
-  /* .license-header {
-    min-height: 120px;
-  } */
+  .license-header {
+    margin-bottom: 0.5rem;
+  }
 
   .license-header h1 {
     font-size: 1.5rem;

@@ -272,6 +272,33 @@
   }
 }
 
+/* Media queries for medium devices (≤768px) */
+@media (max-width: 768px) {
+  .header {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .companyName {
+    font-size: 1.3rem;
+  }
+
+  .companyDescription {
+    font-size: 0.9rem;
+  }
+
+  .searchInput {
+    width: 120px;
+  }
+
+  .contactText {
+    font-size: 0.9rem;
+  }
+}
+
 /* Media queries for phones (≤640px) */
 @media (max-width: 640px) {
   .header {

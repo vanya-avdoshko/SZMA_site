@@ -91,9 +91,9 @@
 
 /* Медиа-запросы для планшетов (641px–1024px) */
 @media (max-width: 1024px) {
-  .projects_content {
+  /* .projects_content {
     padding: 1.5rem 1rem;
-  }
+  } */
 
   .projects_content h1 {
     font-size: 2.2rem;
