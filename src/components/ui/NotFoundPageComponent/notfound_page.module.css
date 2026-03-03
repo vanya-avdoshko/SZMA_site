@@ -1,0 +1,123 @@
+/* not-found.css */
+.not-found-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: -56px;
+  padding: 3rem 2rem;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.not-found-code {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #2c3e50;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 0 #3498db;
+  animation: pulse 2s infinite;
+}
+
+.not-found-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3498db;
+  display: inline-block;
+}
+
+.not-found-text {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.not-found-link {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.not-found-link:hover {
+  background-color: #2c3e50;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Анимации (повтор из homepage.css, можно объединить) */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .not-found-container {
+    padding: 2rem 1.5rem;
+    margin-top: -32px;
+  }
+
+  .not-found-code {
+    font-size: 6rem;
+  }
+
+  .not-found-title {
+    font-size: 2rem;
+  }
+
+  .not-found-text {
+    font-size: 1.1rem;
+  }
+
+  .not-found-link {
+    font-size: 1.1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .not-found-container {
+    padding: 1.5rem 1rem;
+    margin-top: -24px;
+  }
+
+  .not-found-code {
+    font-size: 4rem;
+  }
+
+  .not-found-title {
+    font-size: 1.5rem;
+  }
+
+  .not-found-text {
+    font-size: 1rem;
+  }
+
+  .not-found-link {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+  }
+}

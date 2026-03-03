@@ -34,7 +34,7 @@ const CustomersPage = () => {
       id: 4,
       name: 'ООО «СПИК СЗМА»',
       location: 'г. Санкт-Петербург, Россия',
-      logo: 'https://lh6.googleusercontent.com/proxy/7gS0-xCwCoHkl9ShZnU9m1N5IpoHZ8G-vYjLMkeRh86v-CZ7Ho2kR9Bo',
+      logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkzNbtiMNnHCU11qJuREXz5JaiYR3w_AXnEg&s',
       description: 'Инжиниринговая компания, специализирующаяся на автоматизации опасных производственных объектов, с более чем 60-летним опытом работы.',
       website: 'https://szma.com/'
     },

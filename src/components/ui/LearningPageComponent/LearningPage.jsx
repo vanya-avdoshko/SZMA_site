@@ -4,7 +4,7 @@ import './learning_page.css';
 const LearningPage = () => {
     // Пример данных сертификатов (в реальном приложении данные будут загружены из API или базы данных)
     const learning = [
-        { id: 1, title: "Протокол проверки знаний по вопросам промышленной безопасности Nº 01/2025", imageUrl: "/images/learning_docs/03_01_25.jpg", date: "2025-01-03" },
+        { id: 1, title: "Протокол проверки знаний по вопросам промышленной безопасности Nº МЗОУ131", imageUrl: "/images/learning_docs/06_02_23.png", date: "2023-02-06" },
         { id: 2, title: "Выписка из журнала учёта присвоения (подтверждения) электротехническому персоналу группы по электробезопасности", imageUrl: "/images/learning_docs/11_01_25.jpg", date: "2025-01-11" },
         { id: 3, title: "Выписка из журнала учёта присвоения (подтверждения) электротехническому персоналу группы по электробезопасности", imageUrl: "/images/learning_docs/11_01_25(2).jpg", date: "2025-01-11" },
         { id: 4, title: "Протокол Nº1309 от 26.03.2024 г. проверки знаний в объеме нормативных правовых актов", imageUrl: "/images/learning_docs/26_03_24.jpg", date: "2024-03-26" },
@@ -40,11 +40,6 @@ const LearningPage = () => {
         };
         return date.toLocaleDateString('ru-RU', options);
     }
-
-    // Пример использования:
-    const dateString = "2024-06-18";
-    const formattedDate = formatDate(dateString);
-    console.log(formattedDate); // Вывод: 18 июня 2024
 
     // Функция для стилизации заголовка
     const renderStyledTitle = (title) => {

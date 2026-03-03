@@ -5,7 +5,7 @@ const Sidebar = React.forwardRef(({ isOpen, toggleSidebar }, ref) => {
   const navItems = [
     { id: 1, path: '/', label: 'Главная' },
     { id: 2, path: '/news', label: 'Новости' },
-    { id: 4, path: '/projects', label: 'Проекты' },
+    { id: 4, path: '/projects', label: 'Работы' },
     { id: 5, path: '/licenses', label: 'Лицензии' },
     { id: 6, path: '/learning', label: 'Обучение' },
     { id: 7, path: '/customers', label: 'Заказчики' },

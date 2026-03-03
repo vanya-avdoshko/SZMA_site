@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/szma.by/webstat"
+AuthUserFile /var/www/szmaby/data/etc/534650.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>

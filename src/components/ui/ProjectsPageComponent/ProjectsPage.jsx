@@ -5,8 +5,8 @@ const ProjectsPage = () => {
   return (
     <div className={styles.projects_content}>
       <div className="license-header">
-        <h1 className="animate-header">Проекты компании</h1>
-        <p className="animate-subheader">Эксперты в автоматизации: наши проекты</p>
+        <h1 className="animate-header">Работы компании</h1>
+        <p className="animate-subheader">Эксперты в автоматизации: наши работы</p>
       </div>
       <table className={styles.projects_table}>
         <thead>
@@ -116,7 +116,7 @@ const ProjectsPage = () => {
           </tr>
           <tr>
             <td className={styles.project_name}>
-              Строительство птичника 4Б в д. Ляховцы Мозырского района
+               Пусконаладочные работы на объекте «Строительство птичника 4Б в д. Ляховцы Мозырского района»
             </td>
             <td className={styles.project_customer}>ОДО «ПроКТОр»</td>
             <td className={styles.project_contractor}>ОДО «ПроКТОр»</td>

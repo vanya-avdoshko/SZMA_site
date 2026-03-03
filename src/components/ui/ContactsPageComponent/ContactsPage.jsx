@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaPhone } from 'react-icons/fa';
+import { FaPhone, FaMailBulk } from 'react-icons/fa';
 import './contacts_page.css';
 
 const ContactsPage = () => {
@@ -23,12 +23,12 @@ const ContactsPage = () => {
                 <div id="general_manager">
                     <h3>Генеральный директор <br /><br /></h3>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTawdOGxXg6ISHPiCRBEhXiuokkRRucHPmDg&s" alt="гендиректор" />
-                    <h4 className='contacts_name'>Гавриленко Сергей Александрович</h4>
+                    <h4 className='contacts_name'>Авдошко Сергей <br /> Васильевич</h4>
                     <p className='phone_number'>
                         <FaPhone />
-                        <a href="tel:+375236210605">+375 (236) 21-06-05</a> (г. Мозырь) <br />
-                        <a href="tel:+375291405882">+375 (29) 140-58-82</a> (Велком)<br />
-                        <a href="tel:+375336835113">+375 (33) 683-51-13</a> (МТС)
+                        <a href="tel:+375297652576">+375 (29) 76-525-76</a> (МТС) <br />  
+                        <FaMailBulk />                      
+                        <a href="mailto:avdoshko@szma.by">avdoshko@szma.by</a>
                     </p>
                 </div>
                 <div id="chief_engineer">
@@ -37,30 +37,30 @@ const ContactsPage = () => {
                     <h4 className='contacts_name'>Галактионов Сергей Владимирович</h4>
                     <p className='phone_number'>
                         <FaPhone />
-                        <a href="tel:+375173553690">+375 (17) 355-36-90</a><br />
+                        <a href="tel:+375173553690">+375 (17) 355-36-90</a> (г. Минск)<br />
                         <a href="tel:+375173043082">+375 (17) 304-30-82</a> (г. Минск)<br />
-                        <a href="tel:+375296833422">+375 (29) 683-34-22</a> (Велком)<br />
+                        <a href="tel:+375296833422">+375 (29) 683-34-22</a> (А1)<br />
                         <a href="tel:+375336656022">+375 (33) 665-60-22</a> (МТС)
                     </p>
                 </div>
                 <div id="foreman">
-                    <h3>Начальник мозырского участка ПНР</h3>
+                    <h3>Производитель работ <br /> <br /></h3>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTawdOGxXg6ISHPiCRBEhXiuokkRRucHPmDg&s" alt="Начальник участка" />
-                    <h4 className='contacts_name'>Авдошко Сергей <br /> Васильевич</h4>
+                    <h4 className='contacts_name'>  Чернов Константин Владимирович</h4>
                     <p className='phone_number'>
                         <FaPhone />
                         <a href="tel:+375236373457">+375 (236) 37-34-57</a> (г. Мозырь)<br />
-                        <a href="tel:+375297652576">+375 (29) 76-525-76</a> (МТС)
+                        <a href="tel:+375297652576">+375 (29) 822-55-89</a> (МТС)
                     </p>
                 </div>
                 <div id="accountant">
-                    <h3>Бухгалтер <br/><br/></h3>
+                    <h3>Бухгалтер <br /><br /></h3>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS84I-f5llEVpvg_fXmnxGGCLV00_zkxsTdXtkI9vQGPntsdrJgmDeFDqQXTPtSIsBNEL0&usqp=CAU" alt="прораб" />
                     <h4 className='contacts_name'>Филипчик Ольга <br /> Эдуардовна</h4>
                     <p className='phone_number'>
                         <FaPhone />
-                        <a href="tel:+375296603644">+375 (29) 660-36-44</a> (МТС)<br />
-                        <a href="tel:+375296833422">+375 (29) 683-34-22</a> (Велком)
+                        <a href="tel:+375173043082">+375 (17) 304-30-82</a> (г. Минск)<br />
+                        <a href="tel:+375296603644">+375 (29) 660-36-44</a> (A1)
                     </p>
                 </div>
             </div>

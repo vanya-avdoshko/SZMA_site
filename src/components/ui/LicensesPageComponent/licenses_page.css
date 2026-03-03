@@ -169,7 +169,7 @@
   /* Уменьшение размера блока на 30% */
   justify-self: center;
   /* Выравнивание по центру в ячейке сетки */
-  /* margin-left: -20px; */
+  /* Removed margin-left: -20px; */
 }
 
 .image-item:hover {
@@ -308,9 +308,6 @@
     padding: 3rem 1rem;
   }
 
-  /* .license-header {
-    min-height: 200px;
-  } */
   .license-header h1 {
     font-size: 4rem;
   }
@@ -318,23 +315,17 @@
   .image-item {
     max-width: 180px;
     /* Slightly larger for large screens */
-    flex: 0 0 calc(50% - 0.5rem);
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .license-info {
     min-width: 300px;
-  }
-
-  .license-header {
-    margin-top: -3.5rem;
   }
 
   .image-item {
     max-width: 140px;
     /* Smaller images */
-    flex: 0 0 calc(50% - 0.5rem);
   }
 }
 
@@ -358,13 +349,11 @@
 
   .license-header {
     min-height: 150px;
-    margin-bottom: 2rem;
   }
 
   .image-item {
     max-width: 130px;
     /* Even smaller */
-    flex: 0 0 calc(50% - 0.5rem);
   }
 }
 
@@ -376,8 +365,6 @@
   .license-header {
     min-height: 1rem;
     margin-top: -1.5rem;
-    margin-bottom: 1rem;
-
   }
 
   .license-header h1 {
@@ -404,9 +391,7 @@
   }
 
   .image-item {
-    max-width: 120px;
-    /* Further reduced */
-    flex: 0 0 calc(50% - 0.5rem);
+    max-width: 90%; /* Adjusted to scale better */
   }
 
   .image-caption {
@@ -420,10 +405,6 @@
     padding: 1rem;
   }
 
-  .license-header {
-    margin-bottom: 0.5rem;
-  }
-
   .license-header h1 {
     font-size: 1.5rem;
   }
@@ -433,9 +414,7 @@
   }
 
   .image-item {
-    max-width: 100px;
-    /* Very small images */
-    flex: 0 0 calc(50% - 0.5rem);
+    max-width: 90%; /* Consistent scaling */
   }
 
   .image-caption {
@@ -457,9 +436,7 @@
   }
 
   .image-item {
-    max-width: 80px;
-    /* Smallest size for tiny screens */
-    flex: 0 0 calc(50% - 0.5rem);
+    max-width: 90%; /* Maintains responsiveness */
   }
 
   .image-caption {

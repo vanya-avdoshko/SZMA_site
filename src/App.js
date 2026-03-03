@@ -13,6 +13,7 @@ import VacanciesPage from "./components/ui/VacanciesPageComponent/VacanciesPage"
 import ServicesPage from "./components/ui/ServicesPageComponent/ServicesPage";
 import CustomersPage from "./components/ui/CustomersPageComponent/CustomersPage";
 import OtherCustomersPage from "./components/ui/OtherCustomersPageComponent/OtherCustomersPage";
+import NotFoundPage from "./components/ui/NotFoundPageComponent/NotFoundPage";
 import ScrollToTop from "./components/layout/ScrollComponent/ScrollToTop";
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
           <Route path="/other-customers" element={<OtherCustomersPage/>}/>,
 
           {/* Роут для 404 страницы */}
-          <Route path="*" element={<div>Страница не найдена</div>} />
+          <Route path="*" element={<NotFoundPage/>} />
         </Route>
       </Routes>
     </Router>

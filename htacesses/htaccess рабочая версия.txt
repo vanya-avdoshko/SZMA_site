@@ -1,0 +1,30 @@
+AddDefaultCharset UTF-8
+DefaultLanguage ru-RU
+
+<IfModule mod_mime.c>
+    AddType text/html .html
+    AddType text/css .css
+    AddType application/javascript .js
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html|htm)$">
+        Header set Content-Type "text/html; charset=UTF-8"
+    </FilesMatch>
+    <FilesMatch "\.css$">
+        Header set Content-Type "text/css; charset=UTF-8"
+    </FilesMatch>
+    <FilesMatch "\.js$">
+        Header set Content-Type "application/javascript; charset=UTF-8"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
+    RewriteRule . /index.html [L]
+</IfModule>
